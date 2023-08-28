@@ -6,7 +6,7 @@ For 08282023
 Replace all 192.168.
 Netbox
 Disable wifi-based URL filtering, move to FW
-
+change mgmt types, BAU, emergency, scheduled, 
 
 
 
@@ -42,7 +42,9 @@ cancel tierpoint.. all inhouse.
 
 
 
-Create an email distro called NetworkEngineering@crossriver.com and a second email distro called NetOps@crossriver.com add just me for now
+NetworkEngineering@crossriver.com // NetOps@crossriver.com
+    Jira board and Monday board
+    
 
 Thales - not first meeting but ... where do we have them. Take a look at prior implemtation... appliance or virtual. appliance onsite? 
 
