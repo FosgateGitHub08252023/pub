@@ -1,6 +1,10 @@
 Misc
 
 
+ToDo
+Disable split-tunnel
+
+
 https://vpn.crbnj.net
 KU*zKB70neW6S5
 
