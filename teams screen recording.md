@@ -1,11 +1,10 @@
-teams screen recording
-megaport access
+Misc
 
 
 https://vpn.crbnj.net
 KU*zKB70neW6S5
 
-
+540644
 
 6pmwFpMt.K!ZiBTr]y#z]
 6pmwFpMt.K!ZiBTr]y#z]
@@ -20,12 +19,6 @@ ahighland@crossriver.com
 
 ph+472312
 Teaneck1
-
-
-Network is United Health Choise Plus Plan
-PPO
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
 Admin_Pcs
@@ -80,9 +73,6 @@ crossriverba-vfo-sw6
 crossriverba-vfo-mgmt-sw0
 
 
-585808921
-585808921
+monitor missing
 
 
-021000021
-021000021
