@@ -43,8 +43,10 @@ cancel tierpoint.. all inhouse.
 
 
 NetworkEngineering@crossriver.com // NetOps@crossriver.com
-    Jira board and Monday board
-    
+    Jira board - where in JIRA
+    Monday board - where in Monday
+    Confluence board - where in Confluence
+
 
 Thales - not first meeting but ... where do we have them. Take a look at prior implemtation... appliance or virtual. appliance onsite? 
 
@@ -71,3 +73,8 @@ network access
 sept 15th to oct 8th is change freeze
 
 Firewalls not in Solarwinds
+
+
+mkmkmkm
+
+no Palo Alto user-agent.. 
