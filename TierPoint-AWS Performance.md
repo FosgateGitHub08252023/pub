@@ -39,6 +39,47 @@ crb06 is onprem in Parker
 crb08 is AWS DC
 crb09 is AWS DC
 
+
+
+
+Goal Capture Wireshark PCAP from CRB07 and CRB08
+
+Transfer large file from CRB07 to CRB08
+
+1) Connect to CRB07
+2) Install Wireshark
+3) From Command Prompt issue the following commands
+    - ipconfig /all
+    - netsh interface ipv4 show subinterfaces
+    - netstat -s
+    - netstat -e
+    - netstat -s | findstr Errors
+4) Save Command Prompt results to a network share
+
+
+Connect to CRB08
+5) Install Wireshark
+6) From Command Prompt issue the following commands
+    - ipconfig /all
+    - netsh interface ipv4 show subinterfaces
+    - netstat -s
+    - netstat -e
+    - netstat -s | findstr Errors
+7) Save Command Prompt results to a network share
+
+8) Start Wireshark on CRB07
+9) Start Wireshark on CRB08
+10) Transfer the large file from CRB07 to CRB08
+11) Take a screen capture of the transfer illustrating the transfer speed
+12) Stop and save both Wireshark results to a network share
+
+
+
+
+
+
+
+
 ahighlandVCM (MTU 1514) ping -l 9000 crb07 -n 50 resulted in 50sent, 41received, 9lost 18%loss.. another time saw 38% loss
 ahighlandVCM (MTU 1514) ping -l 1500 crb07 -n 50 resulted in 50sent, 35received, 15lost 18%loss.. another time saw 30% loss
 ahighlandVCM (MTU 1514) ping -l 1000 crb08 -n 50 resulted in no problem results
@@ -54,3 +95,6 @@ To use jumbo frames in TCP, you need to configure both the sender and the receiv
 
 When to use jumbo frames in TCP
 Using jumbo frames in TCP can be beneficial for certain scenarios, such as transferring large files or streaming high-quality video or audio. However, using jumbo frames in TCP can also have drawbacks, such as fragmentation, compatibility issues, and increased complexity. Therefore, you should weigh the pros and cons of using jumbo frames in TCP and decide whether they are suitable for your network and application needs.
+
+
+https://superuser.com/questions/32098/how-to-diagnose-local-nic-wired-losing-packets
