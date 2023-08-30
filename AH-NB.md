@@ -11,7 +11,6 @@ change mgmt types, BAU, emergency, scheduled,
 
 
 
-
 >>>>>Since we last spoke<<<<<
 
 Local and jumpbox computer application issues are resolved
@@ -49,6 +48,7 @@ Which platform to use a network engineering project board? Use Monday or JIRA? I
     - WHere in Jira
 
 
+
 >>>>>Moving Projects/tasks forward<<<<<
 Need access to Linwood non-prod fw.
     - Apply some best practiecs w/o jeprodizing cutover dates
@@ -57,7 +57,7 @@ Need access to Linwood non-prod fw.
 Thales - not first meeting but ... where do we have them. Take a look at prior implemtation... appliance or virtual. appliance onsite? 
 
 
->>>>>Strategy<<<<<
+>>>>>Strategy/My Direction/Recommendation Actions/Recommendation Products<<<<<
 Cancel TierPoint.. all inhouse. 
 NetworkEngineering@crossriver.com // NetOps@crossriver.com
 replace everything except for firewalls, Ubiquity, HPE, 
@@ -91,7 +91,7 @@ Need MegaPort access. Who to ask?
 >>>>>Working on Next<<<<<
 
 Understand WAN
-    - Streteched VLANs
+    - Streteched VLANs btwn sites?
     - P2Ps
     - Loops
     - Scalability
@@ -100,6 +100,9 @@ Understand WAN
     - VLAN Allocation
     - AWS VPC networking
 
+netbox is DCIM
+
 VFO to AWS performance based on current access
 
-Potentially 
+
+
