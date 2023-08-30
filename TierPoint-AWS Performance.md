@@ -79,11 +79,22 @@ Connect to CRB08
 
 
 
-
 ahighlandVCM (MTU 1514) ping -l 9000 crb07 -n 50 resulted in 50sent, 41received, 9lost 18%loss.. another time saw 38% loss
 ahighlandVCM (MTU 1514) ping -l 1500 crb07 -n 50 resulted in 50sent, 35received, 15lost 18%loss.. another time saw 30% loss
 ahighlandVCM (MTU 1514) ping -l 1000 crb08 -n 50 resulted in no problem results
 ahighlandVCM (MTU 1514) ping -l 9000 crb08 -n 50 resulted in all pings drop
+
+
+1GB file download from internet via Ali's AWSCVM was 44seconds vs Ali's MBP from Parker which Ali which was less than half competed when Ali stopped watch at 3mins
+
+
+Questions for Megaport
+69.210.70.90/31 Amazon.com, Inc. (AMAZO-4)
+    - Did it need to be a public IP?
+
+10Gig speed on a 10gig port or 1.25?
+
+
 
 
 

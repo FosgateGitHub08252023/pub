@@ -10,7 +10,6 @@ change mgmt types, BAU, emergency, scheduled,
 
 
 
-
 >>>>>Since we last spoke<<<<<
 Local and jumpbox computer application issues are resolved
 I worked on internal perimeter audit (wifi and firewall)
