@@ -53,11 +53,7 @@ Ali_Highland_8
 
 online-storage-and-backup
 
-172.19.72.45
-crb07 is onprem DC
-crb06 is onprem in Parker
-crb08 is AWS DC
-crb09 is AWS DC
+
 
 
 onprem to onprem was 200-300MB/s same file 
