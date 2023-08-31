@@ -8,8 +8,33 @@ Remove LinkSys and devices unable to send logs, support NAC
 
 
 
-https://vpn.crbnj.net
-KU*zKB70neW6S5
+
+surveyd and reviewd Linwood firewalls. ready to stage the cutover to old Linwood firewalls to the new linwood firewall. waiting for r/w access
+
+P2P
+
+I'll prep the fw for israel firewall
+
+reviewing the VFO to AWS connectivity
+MegaPort details and need to followup with them with addiation questions
+Sholmi performance  - - - reviewing the VFO to AWS connectivity
+
+israel office diagram
+  need number of floors
+  number of ports per floor
+  floor plan
+
+
+Understand WAN
+    - P2Ps
+    - IP Layout
+    - VLAN Allocation
+    - AWS VPC networking
+
+
+
+
+
 
 540644
 
