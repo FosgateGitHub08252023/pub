@@ -94,7 +94,8 @@ Questions for Megaport
 
 10Gig speed on a 10gig port or 1.25?
 
-
+Palo Alto
+show system settings jumboframe
 
 
 
