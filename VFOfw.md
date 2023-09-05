@@ -7405,3 +7405,915 @@ ahighland@PA-5220-VF-A(active)>
 ahighland@PA-5220-VF-A(active)> 
 ahighland@PA-5220-VF-A(active)> 
 ahighland@PA-5220-VF-A(active)> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ahighland@PA-5220-VF-A(active)> show session info
+
+target-dp:                                       *.*
+--------------------------------------------------------------------------------
+Number of sessions supported:                    4194302
+Number of allocated sessions:                    96831
+Number of active TCP sessions:                   75315
+Number of active UDP sessions:                   21045
+Number of active ICMP sessions:                  190
+Number of active GTPc sessions:                  0
+Number of active HTTP2-5gc sessions:             0
+Number of active GTPu sessions:                  0
+Number of pending GTPu sessions:                 0
+Number of active BCAST sessions:                 0
+Number of active MCAST sessions:                 0
+Number of active predict sessions:               0
+Number of active SCTP sessions:                  0
+Number of active SCTP associations:              0
+Number of active PFCP sessions:                  0
+Number of active IMSI sessions:                  0
+Session table utilization:                       2%
+Number of sessions created since bootup:         368966724
+Packet rate:                                     146982/s
+Throughput:                                      619552 kbps
+New connection establish rate:                   1486 cps
+--------------------------------------------------------------------------------
+Session timeout
+  TCP default timeout:                           3600 secs
+  TCP session timeout before SYN-ACK received:      5 secs
+  TCP session timeout before 3-way handshaking:    10 secs
+  TCP half-closed session timeout:                120 secs
+  TCP session timeout in TIME_WAIT:                15 secs
+  TCP session delayed ack timeout:                 25 millisecs
+  TCP session timeout for unverified RST:          30 secs
+  UDP default timeout:                             30 secs
+  ICMP default timeout:                             6 secs
+  SCTP default timeout:                          3600 secs
+  SCTP timeout before INIT-ACK received:            5 secs
+  SCTP timeout before COOKIE received:             60 secs
+  SCTP timeout before SHUTDOWN received:           60 secs
+  5GC delete timeout:                              15 secs
+  other IP default timeout:                        30 secs
+  Captive Portal session timeout:                  30 secs
+  Session timeout in discard state:
+    TCP: 90 secs, UDP: 60 secs, SCTP: 30 secs, other IP protocols: 60 secs
+--------------------------------------------------------------------------------
+Session accelerated aging:                       True
+  Accelerated aging threshold:                   80% of utilization
+  Scaling factor:                                2 X
+--------------------------------------------------------------------------------
+Session setup
+  TCP - reject non-SYN first packet:             True
+  Hardware session offloading:                   True
+  Software Cut Through:                          True
+  Hardware UDP session offloading:               True
+  Run-to-completion mode:                        False
+  Tunnel acceleration:                           True
+  IPv6 firewalling:                              True
+  Strict TCP/IP checksum:                        True
+  Strict TCP RST sequence:                       True
+  Reject TCP small initial window:               False
+  Reject TCP SYN with different seq/options:     True
+  ICMP Unreachable Packet Rate:                  200 pps
+--------------------------------------------------------------------------------
+Application trickling scan parameters:
+  Timeout to determine application trickling:    10 secs
+  Resource utilization threshold to start scan:  80%
+  Scan scaling factor over regular aging:        8
+--------------------------------------------------------------------------------
+Session behavior when resource limit is reached: drop
+--------------------------------------------------------------------------------
+Pcap token bucket rate                         : 10485760
+--------------------------------------------------------------------------------
+Max pending queued mcast packets per session   : 0
+--------------------------------------------------------------------------------
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show session info | match Through
+  <value>  <value>
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show session info | match Through
+Throughput:                                      1219969 kbps
+  Software Cut Through:                          True
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> sh
+Unknown command: sh
+
+You have accessed a computer system owned and operated by Cross River Bank (CRB). This system may be accessed and used only as authorized by CRB. Persons or entities that access this system without authorization may be subject to criminal prosecution. This computer system may be monitored by CRB, and all information placed on or sent over this system may be copied, used, or disclosed by CRB for all lawful purposes.
+Last login: Thu Aug 31 13:57:59 2023 from 172.22.16.72
+
+
+
+Number of failed attempts since last successful login: 1
+
+There have been failed attempted logins from your username, which could mean someone is trying to brute-force your login. If this is not expected, consider contacting your system administrator.
+
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show session info | match Through
+Throughput:                                      558230 kbps
+  Software Cut Through:                          True
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show session info | match Through
+Throughput:                                      478112 kbps
+  Software Cut Through:                          True
+ahighland@PA-5220-VF-A(active)> show session info | match Through
+Throughput:                                      493762 kbps
+  Software Cut Through:                          True
+ahighland@PA-5220-VF-A(active)> show vpn 
+> flow          Show dataplane IPSec-VPN tunnel information
+> gateway       Show list of IKE gateway configuration
+> ike-hashurl   IKE Hash-and-url certificate cache information
+> ike-sa        Show IKE SA
+> ipsec-sa      Show IPSec SA
+> tunnel        Show list of auto-key IPSec tunnel configuration
+
+ahighland@PA-5220-VF-A(active)> show vpn tunnel 
+> match    if the name contains the string or not
+> name     Show for given VPN tunnel
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn tunnel name 
+  AWS_DC_Primary                 AWS_DC_Primary
+  AWS_DC_Secondary               AWS_DC_Secondary
+  AWS_Internet_Primary           AWS_Internet_Primary
+  AWS_Internet_Secondary         AWS_Internet_Secondary
+  Brooklyn_AveJ                  Brooklyn_AveJ
+  Gade_Home_FIOS                 Gade_Home_FIOS
+  Gade_Home_OptOnline            Gade_Home_OptOnline
+  Linwood_Crown                  Linwood_Crown
+  Mantl                          Mantl
+  Raff_Home_FIOS                 Raff_Home_FIOS
+  Raff_Home_OptOnline            Raff_Home_OptOnline
+  Teaneck-OptOnline              Teaneck-OptOnline
+  VF_RS2_Germany:Production      VF_RS2_Germany:Production
+  VF_RS2_Germany:Staging         VF_RS2_Germany:Staging
+  VF_RS2_Ireland:Production      VF_RS2_Ireland:Production
+  VF_RS2_Ireland:Staging         VF_RS2_Ireland:Staging
+  VF_to_FL_10G_PTP               VF_to_FL_10G_PTP
+  ValleyForge_to_FL_Windstream   ValleyForge_to_FL_Windstream
+  Ventus:Ventus                  Ventus:Ventus
+  i2c_Ashburn                    i2c_Ashburn
+  i2c_SV5                        i2c_SV5
+  <value>                        Show for given VPN tunnel
+
+ahighland@PA-5220-VF-A(active)> show vpn tunnel name AWS_DC_Primary 
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn tunnel name AWS_DC_Primary 
+
+TnID   Name                                                            Gateway                                                         Local Proxy IP       Ptl:Port   Remote Proxy IP      Ptl:Port   Proposals                                                     
+----   ----                                                            -------                                                         --------------       --------   ---------------      --------   ---------                                                     
+23     AWS_DC_Primary                                                  AWS_DC_vpn-016a24dad9ea49f17-0                                  0.0.0.0/0            0:0        0.0.0.0/0            0:0        ESP tunl [DH20][AES256,AES256-GCM16][SHA256,SHA512] 3600-sec 0 
+
+Show IPSec tunnel config: Total 1 tunnels found.
+
+
+ahighland@PA-5220-VF-A(active)> show vpn 
+> flow          Show dataplane IPSec-VPN tunnel information
+> gateway       Show list of IKE gateway configuration
+> ike-hashurl   IKE Hash-and-url certificate cache information
+> ike-sa        Show IKE SA
+> ipsec-sa      Show IPSec SA
+> tunnel        Show list of auto-key IPSec tunnel configuration
+
+ahighland@PA-5220-VF-A(active)> show vpn ipsec-sa 
+> match     if the name contains the string or not
+> summary   show a summary of all IPSec SAs
+> tunnel    Show for given VPN tunnel
+  |         Pipe through a command
+  <Enter>   Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn ipsec-sa summary 
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn ipsec-sa tunnel 
+  AWS_DC_Primary                 AWS_DC_Primary
+  AWS_DC_Secondary               AWS_DC_Secondary
+  AWS_Internet_Primary           AWS_Internet_Primary
+  AWS_Internet_Secondary         AWS_Internet_Secondary
+  Brooklyn_AveJ                  Brooklyn_AveJ
+  Gade_Home_FIOS                 Gade_Home_FIOS
+  Gade_Home_OptOnline            Gade_Home_OptOnline
+  Linwood_Crown                  Linwood_Crown
+  Mantl                          Mantl
+  Raff_Home_FIOS                 Raff_Home_FIOS
+  Raff_Home_OptOnline            Raff_Home_OptOnline
+  Teaneck-OptOnline              Teaneck-OptOnline
+  VF_RS2_Germany:Production      VF_RS2_Germany:Production
+  VF_RS2_Germany:Staging         VF_RS2_Germany:Staging
+  VF_RS2_Ireland:Production      VF_RS2_Ireland:Production
+  VF_RS2_Ireland:Staging         VF_RS2_Ireland:Staging
+  VF_to_FL_10G_PTP               VF_to_FL_10G_PTP
+  ValleyForge_to_FL_Windstream   ValleyForge_to_FL_Windstream
+  Ventus:Ventus                  Ventus:Ventus
+  i2c_Ashburn                    i2c_Ashburn
+  i2c_SV5                        i2c_SV5
+  <value>                        Show for given VPN tunnel
+
+ahighland@PA-5220-VF-A(active)> show vpn ipsec-sa tunnel AWS_DC_Primary
+
+GwID/client IP  TnID   Peer-Address           Tunnel(Gateway)                                                                                                                  Algorithm          SPI(in)  SPI(out) life(Sec/KB)             remain-time(Sec)        
+--------------  ----   ------------           ---------------                                                                                                                  ---------          -------  -------- ------------             ----------------        
+26              23     35.174.70.10           AWS_DC_Primary(AWS_DC_vpn-016a24dad9ea49f17-0)                                                                                   ESP/A256/SHA256    A7221691 CC25CBD0 3600/Unlimited           1500                     
+
+Show IPSec SA: Total 1 tunnels found. 1 ipsec sa found.
+
+
+ahighland@PA-5220-VF-A(active)> show vpn ipsec-sa tunnel AWS_DC_Primary 
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn tunnel 
+> match    if the name contains the string or not
+> name     Show for given VPN tunnel
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show vpn 
+> flow          Show dataplane IPSec-VPN tunnel information
+> gateway       Show list of IKE gateway configuration
+> ike-hashurl   IKE Hash-and-url certificate cache information
+> ike-sa        Show IKE SA
+> ipsec-sa      Show IPSec SA
+> tunnel        Show list of auto-key IPSec tunnel configuration
+
+ahighland@PA-5220-VF-A(active)> show session info
+
+target-dp:                                       *.*
+--------------------------------------------------------------------------------
+Number of sessions supported:                    4194302
+Number of allocated sessions:                    94027
+Number of active TCP sessions:                   78228
+Number of active UDP sessions:                   15303
+Number of active ICMP sessions:                  245
+Number of active GTPc sessions:                  0
+Number of active HTTP2-5gc sessions:             0
+Number of active GTPu sessions:                  0
+Number of pending GTPu sessions:                 0
+Number of active BCAST sessions:                 0
+Number of active MCAST sessions:                 0
+Number of active predict sessions:               0
+Number of active SCTP sessions:                  0
+Number of active SCTP associations:              0
+Number of active PFCP sessions:                  0
+Number of active IMSI sessions:                  0
+Session table utilization:                       2%
+Number of sessions created since bootup:         380847032
+Packet rate:                                     84052/s
+Throughput:                                      303467 kbps
+New connection establish rate:                   1030 cps
+--------------------------------------------------------------------------------
+Session timeout
+  TCP default timeout:                           3600 secs
+  TCP session timeout before SYN-ACK received:      5 secs
+  TCP session timeout before 3-way handshaking:    10 secs
+  TCP half-closed session timeout:                120 secs
+  TCP session timeout in TIME_WAIT:                15 secs
+  TCP session delayed ack timeout:                 25 millisecs
+  TCP session timeout for unverified RST:          30 secs
+  UDP default timeout:                             30 secs
+  ICMP default timeout:                             6 secs
+  SCTP default timeout:                          3600 secs
+  SCTP timeout before INIT-ACK received:            5 secs
+  SCTP timeout before COOKIE received:             60 secs
+  SCTP timeout before SHUTDOWN received:           60 secs
+  5GC delete timeout:                              15 secs
+  other IP default timeout:                        30 secs
+  Captive Portal session timeout:                  30 secs
+  Session timeout in discard state:
+    TCP: 90 secs, UDP: 60 secs, SCTP: 30 secs, other IP protocols: 60 secs
+--------------------------------------------------------------------------------
+Session accelerated aging:                       True
+  Accelerated aging threshold:                   80% of utilization
+  Scaling factor:                                2 X
+--------------------------------------------------------------------------------
+Session setup
+  TCP - reject non-SYN first packet:             True
+  Hardware session offloading:                   True
+  Software Cut Through:                          True
+  Hardware UDP session offloading:               True
+  Run-to-completion mode:                        False
+  Tunnel acceleration:                           True
+  IPv6 firewalling:                              True
+  Strict TCP/IP checksum:                        True
+  Strict TCP RST sequence:                       True
+  Reject TCP small initial window:               False
+  Reject TCP SYN with different seq/options:     True
+  ICMP Unreachable Packet Rate:                  200 pps
+--------------------------------------------------------------------------------
+Application trickling scan parameters:
+  Timeout to determine application trickling:    10 secs
+  Resource utilization threshold to start scan:  80%
+  Scan scaling factor over regular aging:        8
+--------------------------------------------------------------------------------
+Session behavior when resource limit is reached: drop
+--------------------------------------------------------------------------------
+Pcap token bucket rate                         : 10485760
+--------------------------------------------------------------------------------
+Max pending queued mcast packets per session   : 0
+--------------------------------------------------------------------------------
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show counter 
+> global              Show global system counter information
+> interface           Show interface counter information
+> management-server   Show management server counter information
+> rate                Show interface rate information
+  |                   Pipe through a command
+  <Enter>             Finish input
+
+ahighland@PA-5220-VF-A(active)> show counter rate 
+  ethernet1/1    ethernet1/1
+  ethernet1/21   ethernet1/21
+  ethernet1/22   ethernet1/22
+  <value>        <name> interface name
+
+ahighland@PA-5220-VF-A(active)> show counter global 
+> filter   Apply counter filters
+> name     Counter name
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show counter global 
+> filter   Apply counter filters
+> name     Counter name
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show counter global 
+
+Global counters:
+Elapsed time since last sampling: 66.62  seconds
+
+name                                   value     rate severity  category  aspect    description
+--------------------------------------------------------------------------------
+pkt_flow_fastpath                          1        0 info      packet    resource  Packets entered module flow stage fastpath
+pkt_flow_ctrl                              1        0 info      packet    resource  Packets entered module flow stage ctrl
+pkt_flow_np                        29021554589    80767 info      packet    resource  Packets entered module flow stage np
+pkt_module_internal                        1        0 info      packet    resource  Packets entered module module stage internal
+pkt_pktlog_forwarding                      1        0 info      packet    resource  Packets entered module pktlog stage forwarding
+pkt_flow_host                        8587550       22 info      packet    resource  Packets entered module flow stage host
+pkt_recv                           29030562665    80792 info      packet    pktproc   Packets received
+pkt_recv_zero                      28068644103    77642 info      packet    pktproc   Packets received from QoS 0
+pkt_recv_qos_1                         25657        0 info      packet    pktproc   Packets received from QoS 1
+pkt_recv_qos_2                     788965898     2681 info      packet    pktproc   Packets received from QoS 2
+pkt_recv_qos_3                      89419430      368 info      packet    pktproc   Packets received from QoS 3
+pkt_recv_qos_4                       5800331       12 info      packet    pktproc   Packets received from QoS 4
+pkt_recv_qos_5                      74631249       75 info      packet    pktproc   Packets received from QoS 5
+pkt_recv_qos_6                         29784        0 info      packet    pktproc   Packets received from QoS 6
+pkt_recv_qos_7                       2835951       10 info      packet    pktproc   Packets received from QoS 7
+pkt_session_closed_fastpath               93        0 drop      packet    pktproc   Packets dropped: flow closed at fastpath
+pkt_sent                           33555360087    96444 info      packet    pktproc   Packets transmitted
+pkt_alloc                          13701419711    34075 info      packet    resource  Packets allocated
+pkt_swbuf_fwd                       18115551      194 info      packet    pktproc   Packets transmitted using software buffer
+pkt_swbuf_clone                            5        0 info      packet    pktproc   Packets replicated using software buffer
+pkt_queue_cp_hw                        14046        0 info      packet    resource  Hardware packets copied for queuing
+pkt_stp_rcv                         10550173       37 info      packet    pktproc   STP BPDU packets received
+pkt_pvst_rcv                        10550173       37 info      packet    pktproc   PVST+ BPDU packets received
+pkt_pvst_non_L2                     10550173       37 info      packet    pktproc   PVST+ BPDU packets received but skip pvid check under non L2 mode
+pkt_lacp_sent                          18846        0 info      packet    pktproc   LACP Packets transmitted
+pkt_lacp_recv                         564902        1 info      packet    pktproc   LACP Packets received
+pkt_inconsist                         210263        0 info      packet    pktproc   Packet buffer pointer inconsistent
+session_allocated                  396992296     1483 info      session   resource  Sessions allocated
+session_freed                      396900336     1501 info      session   resource  Sessions freed
+session_installed                  381407082     1427 info      session   resource  Sessions installed
+session_discard                      1552210        3 info      session   resource  Session set to discard by security policy check
+session_install_error                  45832        0 warn      session   pktproc   Sessions installation error
+session_install_error2                     2        0 warn      session   pktproc   Sessions installation error
+session_install_error3                 45830        0 warn      session   pktproc   Sessions installation error
+session_install_error_c2s                 18        0 warn      session   pktproc   Sessions installation error c2s
+session_install_error_s2c              45814        0 warn      session   pktproc   Sessions installation error s2c
+session_install_error_c2s_retry         3657        0 warn      session   pktproc   Sessions installation error c2s retry
+session_config_switch_race                 4        0 info      session   pktproc   config_switch_race
+session_unverified_rst              32186408      128 info      session   pktproc   Session aging timer modified by unverified RST
+session_pkt_in_closed_state              246        0 info      session   pktproc   Session is closing or closed and still receive TCP pkt
+session_reuse_tcp_session             302805        0 info      session   pktproc   Session key is reuse for another TCP session
+session_reuse_tcp_predict_attempts        54        0 info      session   pktproc   Session is not reused due to existing predict session
+session_renotify                           9        0 info      session   resource  Session notifications retransmitted to offload processor
+session_hash_insert_duplicate          49489        0 warn      session   pktproc   Session setup: hash insert failure due to duplicate entry
+session_servobj_timeout_override   293997815     1204 info      session   pktproc   session timeout overridden by service object
+session_from_ha_prep_reuse             24176        0 info      session   pktproc   Prepare for reuse of from-ha session on getting RST
+flow_rcv_err                            1246        0 drop      flow      parse     Packets dropped: flow stage receive error
+flow_rcv_dot1q_tag_err                  2519        0 drop      flow      parse     Packets dropped: 802.1q tag not configured
+flow_no_interface                       2519        0 drop      flow      parse     Packets dropped: invalid interface
+flow_ipv6_disabled                   4469768       13 drop      flow      parse     Packets dropped: IPv6 disabled on interface
+flow_np_pkt_rcv                    29030142161    80790 info      flow      offload   Packets received from offload processor
+flow_np_pkt_xmt                    122617386      426 info      flow      offload   Packets transmitted to offload processor
+flow_policy_nofwd                      44024        0 drop      flow      session   Session setup: no destination zone from forwarding
+flow_policy_deny                    78935731      117 drop      flow      session   Session setup: denied by policy
+flow_policy_nat_land                      33        0 drop      flow      session   Session setup: source NAT IP allocation result in LAND attack
+flow_tcp_non_syn                     2746272        7 info      flow      session   Non-SYN TCP packets without session match
+flow_tcp_non_syn_drop                2692655        7 drop      flow      session   Packets dropped: non-SYN TCP without session match
+flow_fwd_inter_cpu_mcast            74343537      365 info      flow      forward   Multicast forwarded inter CPU packets
+flow_fwd_l3_bcast_drop                259827        0 drop      flow      forward   Packets dropped: unhandled IP broadcast
+flow_fwd_l3_mcast_drop              14005260       49 drop      flow      forward   Packets dropped: no route for IP multicast
+flow_icmp_err_not_passing_thru             1        0 drop      flow      ipsec     ICMP error packet dropped: no IP configured on the interface
+flow_fwd_l3_ttl_zero                  119678        0 drop      flow      forward   Packets dropped: IP TTL reaches zero
+flow_fwd_l3_noroute                  2675020        5 drop      flow      forward   Packets dropped: no route
+flow_fwd_pbf_err                           3        0 drop      flow      forward   Packets dropped: PBF error
+flow_fwd_pbf_invalid_nh              3211087        0 drop      flow      forward   Packets dropped: Invalid PBF nh
+flow_fwd_l3_noarp                  1158805014     4053 drop      flow      forward   Packets dropped: no ARP
+flow_fwd_zonechange                   888168        2 drop      flow      forward   Packets dropped: forwarded to different zone
+flow_fwd_notopology                    18826        0 drop      flow      forward   Packets dropped: no forwarding configured on interface
+flow_fwd_mtu_exceeded                 324536        0 info      flow      forward   Packets lengths exceeded MTU
+flow_fwd_ip_df_drop                      248        0 drop      flow      forward   Packets dropped: exceeded MTU but DF bit present
+flow_fwd_drop_noxmit                 6927122       16 info      flow      forward   Packet dropped at forwarding: noxmit
+flow_fwd_drop_invstate                     1        0 drop      flow      forward   Packet dropped at forwarding: invalid session state
+flow_qos_pkt_enque                 12522865083    35715 info      flow      qos       Packet enqueued to QoS module
+flow_qos_pkt_deque                 12522865056    35715 info      flow      qos       Packet dequeued from QoS module
+flow_qos_pkt_flush                       321        0 info      flow      qos       Packet flushed from QoS queue due to configuration change
+flow_qos_pol_continue                2707241        0 info      flow      qos       QOS pol continue, pass or invalid qid
+flow_parse_ip_hdr                        634        0 drop      flow      parse     Packets dropped: Packet too short to cover IP header
+flow_ip6_mcast_off                   9082037       28 info      flow      pktproc   Packets received: IPv6 multicast pkts with flow off
+flow_parse_l4_hdr                        198        0 drop      flow      parse     Packets dropped: TCP (UDP/ICMP/SCTP) packet too short
+flow_parse_l4_cksm                     42953        0 drop      flow      parse     Packets dropped: TCP/UDP checksum failure
+flow_parse_l4_port                      1026        0 drop      flow      parse     Packets dropped: illegal TCP/UDP port 0
+flow_parse_iperror                        50        0 drop      flow      parse     Packets dropped: invalid IP address
+flow_parse_land                        24577        0 drop      flow      parse     Packets dropped: land attack
+flow_parse_unmatched_icmperr          102172        0 info      flow      parse     Packets dropped: Unmatched ICMP error message
+flow_frag_zero_if_port                  2489        0 info      flow      parse     Invalid If port seen while processing frags
+flow_frag_pseudo_if_port_mismatch       2489        0 info      flow      parse     If port is zero for frags received on pseudo interface
+flow_bcast_pkt_rcv                    277062        0 info      flow      parse     IP broadcast pkt received
+flow_dhcp_bcast_pkt_rcv                    4        0 info      flow      parse     DHCP broadcast pkt received
+flow_dos_syncookie_ack_err            105647        0 info      flow      dos       TCP SYN cookies: Invalid ACKs received, aggregate profile/zone
+flow_dos_icmp_replyneedfrag              247        0 warn      flow      dos       Packets dropped: Unsuprressed ICMP Need Fragmentation
+flow_dos_pf_ipspoof                      998        0 drop      flow      dos       Packets dropped: Zone protection option 'discard-ip-spoof'
+flow_dos_pf_noreplyttl                 31657        0 drop      flow      dos       Packets dropped: Zone protection option 'suppress-icmp-timeexceeded'
+flow_dos_pf_tcpsyndata                  4666        0 drop      flow      dos       Packets dropped: Zone protection option 'discard-tcp-syn-with-data'
+flow_dos_pf_tcpsynackdata                436        0 drop      flow      dos       Packets dropped: Zone protection option 'discard-tcp-synack-with-data'
+flow_dos_pbp_drop                       4848        0 drop      flow      dos       Packets dropped: Dropped by packet buffer protection RED
+flow_dos_pbp_ifp_zone                    122        0 info      flow      dos       packet buffer protection RED: used ifp's zone id
+flow_dos_proxy_zp_skipped             151317        0 info      flow      dos       Packet skipped zone protection checks as part of a proxied session
+flow_ipfrag_recv                      986718        1 info      flow      ipfrag    IP fragments received
+flow_ipfrag_query                     334949        0 info      flow      ipfrag    IP fragments owner query
+flow_ipfrag_free                      336698        0 info      flow      ipfrag    IP fragments freed after defragmentation
+flow_ipfrag_merge                     315071        0 info      flow      ipfrag    IP defragmentation completed
+flow_ipfrag_swbuf                       8957        0 info      flow      ipfrag    Software buffers allocated for reassembled IP packet
+flow_ipfrag_refrag_mtu                    58        0 info      flow      ipfrag    IP fragment exceeds MTU
+flow_ipfrag_frag                      650108        0 info      flow      ipfrag    IP fragments transmitted
+flow_ipfrag_restore                   312619        0 info      flow      ipfrag    IP fragment restore packet
+flow_ipfrag_del                       315071        0 info      flow      ipfrag    IP fragment delete entry
+flow_ipfrag_free_fraglist               2315        0 info      flow      ipfrag    IP fragment free fraglist
+flow_ipfrag_list_alloc                   245        0 info      flow      ipfrag    IP fragment fraglist allocated
+flow_ipfrag_list_free                    245        0 info      flow      ipfrag    IP fragment fraglist freed
+flow_ipfrag_result_alloc              315071        0 info      flow      ipfrag    IP fragment result allocated
+flow_ipfrag_result_free               315071        0 info      flow      ipfrag    IP fragment result freed
+flow_ipfrag_entry_alloc               334920        0 info      flow      ipfrag    IP fragment entry allocated
+flow_ipfrag_entry_free                334920        0 info      flow      ipfrag    IP fragment entry freed
+flow_ipfrag_owner_query_retry             30        0 info      flow      ipfrag    Number of retries to query owner for fragment
+flow_session_bind_pending                274        0 info      flow      ipfrag    packet added to session bind pending queue
+flow_bind_nack_msg_drop                   28        0 drop      flow      pktproc   gtp-u bind-nack msg dropped
+flow_bind_ack_pop_pending                274        0 info      flow      ipfrag    packet removed from bind-ack pending queue
+flow_predict_installed                  8302        0 info      flow      pktproc   Predict sessions installed
+flow_predict_installed_ha                  1        0 info      flow      pktproc   Predict sessions installed by ha
+flow_predict_match                      9977        0 info      flow      pktproc   Packets matched predict session
+flow_predict_session                    9977        0 info      flow      session   Sessions created via predict
+flow_action_close                     939367        3 drop      flow      pktproc   TCP sessions closed via injecting RST
+flow_action_reset                    4286340       15 drop      flow      pktproc   TCP clients reset via responding RST
+flow_ager_delayed_delete                  33        0 info      flow      pktproc   Delayed session aging for packets being processed
+flow_ager_delay_discard                  114        0 info      flow      pktproc   session ager to discard session due to rematch
+flow_rematch_session_deny                114        0 warn      flow      pktproc   number of rematch deny for parent sessions
+flow_rematch_session_success         2075266        0 info      flow      pktproc   number of rematch success for parent sessions
+flow_rematch_pred_success                  5        0 info      flow      pktproc   Predict was rematched after config change
+flow_arp_pkt_rcv                    22605107       80 info      flow      arp       ARP packets received
+flow_arp_pkt_xmt                     1620767        9 info      flow      arp       ARP packets transmitted
+flow_arp_pkt_replied                  303278        0 info      flow      arp       ARP requests replied
+flow_arp_pkt_learned                      19        0 info      flow      arp       ARP entry learned
+flow_arp_rcv_gratuitous             19288600       67 info      flow      arp       Gratuitous ARP packets received
+flow_arp_resolve_xmt                  498113        5 info      flow      arp       ARP resolution packets transmitted
+flow_arp_throttle                        283        0 error     flow      arp       ARP packet dropped; too many in-flight WQEs
+flow_arp_update_suppressed                60        0 info      flow      arp       ARP update msg suppressed
+flow_nd_pkt_submit                      8517        0 info      flow      nd        ND packets submited to process
+flow_nd_pkt_rcv                         8517        0 info      flow      nd        ND packets received
+flow_nd_neigh_gc                         235        0 info      flow      nd        ND entry GC
+flow_mld_pkt_rcv                      133974        0 info      flow      mld       MLD packets received
+flow_mld_rcv_err                      133974        0 drop      flow      mld       MLD receive error
+flow_host_pkt_rcv                    8587550       22 info      flow      mgmt      Packets received from control plane
+flow_host_pkt_xmt                  122617386      426 info      flow      mgmt      Packets transmitted to control plane
+flow_host_rcv_err                         13        0 drop      flow      mgmt      Packets dropped: receive error from control plane
+flow_host_decap_err                        3        0 drop      flow      mgmt      Packets dropped: decapsulation error from control plane
+flow_host_service_allow              4754009       12 info      flow      mgmt      Device management session allowed
+flow_host_service_deny                291260        0 drop      flow      mgmt      Device management session denied
+flow_host_service_unknown             566855        0 drop      flow      mgmt      Session discarded: unknown application to control plane
+flow_host_vardata_rate_limit_ok        39698        0 info      flow      mgmt      Host vardata not sent: rate limit ok
+flow_health_monitor_rcv              2815295        9 info      flow      mgmt      Health monitoring packet received
+flow_health_monitor_xmt              2815295        9 info      flow      mgmt      Health monitoring packet transmitted
+flow_path_monitor_rx_from_mp         2815295        9 info      flow      mgmt      Path monitor packet received from MP
+flow_path_monitor_tx_to_mp           2815295        9 info      flow      mgmt      Path monitor packet sent to MP
+flow_tunnel_activate                  135425        0 info      flow      tunnel    Number of packets that triggerred tunnel activation
+flow_tunnel_encap_err                   1127        0 drop      flow      tunnel    Packet dropped: tunnel encapsulation error
+flow_tunnel_decap_err                  26264        0 drop      flow      tunnel    Packet dropped: tunnel decapsulation error
+flow_tunnel_encap_mtu_err                247        0 drop      flow      tunnel    Packet encapped: MTU handling error
+flow_tunnel_decap_natt_tp_0            22349        0 drop      flow      tunnel    Packet decapped: tunnel entry not found in nat-t decap
+flow_tunnel_ipsec_esp_encap        12498715597    35450 info      flow      tunnel    Packet encapped: IPSec ESP
+flow_tunnel_ipsec_esp_decap        8121290455    30181 info      flow      tunnel    Packet decapped: IPSec ESP
+flow_tunnel_ipsec_replay_err              22        0 drop      flow      tunnel    Packet dropped: header sequence number is a replay
+flow_tunnel_ipsec_wrong_spi              531        0 drop      flow      tunnel    Packet dropped: IPsec SA for spi in packet not found
+flow_tunnel_ipsec_auth_failed             12        0 drop      flow      tunnel    Packet dropped: Authentication failed
+flow_tunnel_ipsec_lifetime_err           925        0 drop      flow      tunnel    Packet dropped: Decryption lifetime check failed
+flow_tunnel_ha_replay_seq_skipped      70527        0 info      flow      tunnel    Skip HA anti-replay window update as anti-replay disabled
+flow_tunnel_natt_nomatch                   1        0 drop      flow      tunnel    Packet dropped: IPSec NATT packet without SPI match
+flow_tunnel_ipsec_size_changed             7        0 info      flow      tunnel    IPsec packet buffer size changed
+flow_tunnel_rto_tx                  54340761      292 info      flow      tunnel    Real-time-object sync message sent between slots
+flow_tunnel_seq_ha_update_tx           70527        0 info      flow      tunnel     sent between slots
+flow_tunnel_fastpath_race                 80        0 info      flow      tunnel    ESP/AH packet comes before tunnel finishes installation
+flow_tunnel_slowpath_race               1062        0 info      flow      tunnel    ESP/AH packet comes before tunnel finishes installation
+flow_tunnel_cache_resolve            2430263        8 info      flow      tunnel    tunnel structure lookup resolved using session cache
+flow_tunnel_encap_resolve          12524205227    35710 info      flow      tunnel    tunnel structure lookup resolve
+flow_tunnel_encap_resolve_mt         3061152       10 info      flow      tunnel    Multi-tunnel structure lookup resolve
+flow_tunnel_proxyid_resolve           489652        1 info      flow      tunnel    Multi-tunnel structure resolved by proxy-id match
+flow_tunnel_ka_req_rx                1161420        4 info      flow      tunnel    Tunnel keepalive request packet received
+flow_tunnel_ka_req_tx                1355434        4 info      flow      tunnel    Tunnel keepalive request packet transmitted
+flow_tunnel_ka_reply_rx              1217663        4 info      flow      tunnel    Tunnel keepalive reply packet received
+flow_tunnel_ka_reply_tx              1161420        4 info      flow      tunnel    Tunnel keepalive reply packet transmitted
+flow_tunnel_ctx_alloc                   5661        0 info      flow      tunnel    Tunnel context is allocated
+flow_tunnel_ctx_free_ssl_close          3529        0 info      flow      tunnel    Tunnel context is freed upon sslvpn close
+flow_tunnel_ctx_free_modify             1547        0 info      flow      tunnel    Tunnel context is freed upon tunnel modify
+flow_tunnel_nh_not_found                6946        0 error     flow      tunnel    tunnel next hop key not found
+flow_tunnel_nh_ipsecin_insert           4093        0 info      flow      tunnel    Tunnel nexthop inserted, ipsec ingress
+flow_tunnel_nh_ipseceg_insert           4093        0 info      flow      tunnel    Tunnel nexthop inserted, ipsec egress
+flow_tunnel_nh_sslcfg_insert               2        0 info      flow      tunnel    Tunnel nexthop inserted, ssl config
+flow_tunnel_nh_session_insert            187        0 info      flow      tunnel    Tunnel nexthop inserted, session
+flow_tunnel_nh_ipsecin_delete           3529        0 info      flow      tunnel    Tunnel nexthop deleted, ipsec ingress
+flow_tunnel_nh_ipseceg_delete           3529        0 info      flow      tunnel    Tunnel nexthop deleted, ipsec egress
+flow_tunnel_nh_session_delete            173        0 info      flow      tunnel    Tunnel nexthop deleted, session
+flow_host_slowpath_drop                 1062        0 drop      flow      tunnel    ESP/AH host bound packet comes before tunnel finishes installation
+flow_inter_cpu_msg_fwd              74343537      365 info      flow      pktproc   Msg forwarded to other CPU
+flow_gre_tunnel_decap_not_found           38        0 drop      flow      tunnel    GRE Tunnel IPs don't match configuration
+flow_bfd_accept                       940556        3 info      flow      bfd       BFD packet acceptted
+flow_bfd_rx                           940556        3 info      flow      bfd       BFD packet received
+flow_bfd_rx_qos_0                          1        0 info      flow      bfd       BFD packet received for qos 0
+flow_bfd_rx_qos_2                          1        0 info      flow      bfd       BFD packet received for qos 2
+flow_bfd_rx_qos_5                     940554        3 info      flow      bfd       BFD packet received for qos 5
+flow_bfd_tx                          1073643        3 info      flow      bfd       BFD packet transmitted
+flow_bfd_tx_fail                           1        0 drop      flow      bfd       BFD packet tx failed
+flow_bfd_not_found                         2        0 drop      flow      bfd       BFD packet rx not found
+flow_bfd_flow_session                      1        0 info      flow      bfd       BFD packet create Flow session
+device_invalid_netconf                  7331        0 info      device    resource  netconfig temporarily unavailable
+device_netconf_switch                     11        0 info      device    resource  netconfig switched
+device_tundconf_switch                    27        0 info      device    resource  tundconfig switched
+flow_rcv_inter_cpu                  74343537      365 info      flow      offload   inter-cpu packets received
+flow_msg_rcv_inter_cpu              74343537      365 info      flow      offload   inter-cpu message received
+flow_netmsg_doorbell_send             856522        2 info      flow      pktproc   netmsg doorbell sent
+flow_netmsg_broadcast               19932249       73 info      flow      pktproc   netmsg broadcast
+flow_netmsg_enqueue                 19695668       72 info      flow      pktproc   netmsg enqueue succeed
+flow_netmsg_dequeue                 19695668       72 info      flow      pktproc   netmsg dequeue succeed
+flow_netmsg_dequeue_op               5155818       18 info      flow      pktproc   netmsg dequeue operation
+flow_netmsg_bulk_send                5155818       18 info      flow      pktproc   netmsg bulk send
+flow_netmsg_bulk_num                19695668       72 info      flow      pktproc   netmsg bulk num
+flow_netmsg_filter_dup                236581        0 info      flow      pktproc   netmsg filter duplicate msg
+flow_netmsg_filter_total            19932249       73 info      flow      pktproc   netmsg filter total msg
+flow_fpga_rcv_igr_PARSEREJECT_0      6076595       21 info      flow      offload   FPGA IGR Exception: PARSEREJECT_0
+flow_fpga_rcv_igr_IPLENTRUNC              43        0 info      flow      offload   FPGA IGR Exception: IPLENTRUNC
+flow_fpga_rcv_igr_IPV6SRCZERO           6199        0 info      flow      offload   FPGA IGR Exception: IPV6SRCZERO
+flow_fpga_rcv_igr_UDPHLEN           10571463       33 info      flow      offload   FPGA IGR Exception: UDPHLEN
+flow_fpga_rcv_igr_RESERVED0           663864        0 info      flow      offload   FPGA IGR Exception: RESERVED0
+flow_fpga_rcv_igr_TCPHLEN           38054554      132 info      flow      offload   FPGA IGR Exception: TCPHLEN
+flow_fpga_rcv_igr_FLOWDROP             42953        0 info      flow      offload   FPGA IGR Exception: FLOWDROP
+flow_fpga_rcv_egr_TTLONE                  16        0 info      flow      offload   FPGA EGR Exception: TTLONE
+flow_fpga_rcv_egr_L3_NH_NF         1141161133     4051 info      flow      offload   FPGA EGR Exception: L3_NH_NF
+flow_fpga_rcv_err                      21114        0 drop      flow      offload   Packets dropped: receive error from offload processor
+flow_fpga_ingress_exception_err      6101338       21 drop      flow      offload   Packets dropped: receive ingress exception error from offload processor
+flow_fpga_egress_exception_err            16        0 drop      flow      offload   Packets dropped: receive egress exception error from offload processor
+flow_fpga_flow_delete              292258202     1075 info      flow      offload   fpga flow delete transactions
+flow_fpga_flow_update              315906047     1168 info      flow      offload   fpga flow update transaction
+flow_fpga_rcv_stats                 22463488       71 info      flow      offload   fpga session refresh/stats message received
+flow_fpga_rcv_forwarding           1141161149     4051 info      flow      offload   fpga packets for forwarding received
+flow_fpga_rcv_fastpath             26838141411    72858 info      flow      offload   fpga packets for fastpath received
+flow_fpga_rcv_ha                     5549035        0 info      flow      offload   fpga packets for ha received
+flow_fpga_flow_status              174821597      912 info      flow      offload   fpga flow status query
+flow_fpga_flow_status_ack          174821489      912 info      flow      offload   fpga flow status query ack
+flow_fpga_flow_status_nack               108        0 info      flow      offload   fpga flow status query nack
+flow_fpga_flow_status_nack_v4            109        0 info      flow      offload   fpga flow status query nack to clear stale FE entry (v4)
+flow_fpga_zombie_flow_delete             109        0 info      flow      offload   fpga zombie flow delete being sent
+flow_fpp_owner_unknown                 48257        0 info      flow      offload   owner message received with invalid slot/pp
+flow_fpp_status_flow_status              108        0 info      flow      offload   fpga flow status query with inactive flow
+flow_fpp_sess_owner                416734314     1259 info      flow      offload   FPP Sess Owner
+flow_fpp_sess_bind_ack             292311129     1056 info      flow      offload   FPP Sess bind ACK
+flow_fpp_sess_bind_nack                   29        0 info      flow      offload   FPP Sess bind NACK
+flow_fpp_sess_bind_nack_er_bound          29        0 info      flow      offload   FPP Sess bind NACK for an already bound flow
+flow_fpp_sess_bind_notify          292309592     1056 info      flow      offload   Sess bind notification to FPP
+flow_fpp_sess_predict_notify            8303        0 info      flow      offload   Sess predict notification to FPP
+flow_fpp_sess_predict_notify_ack        8303        0 info      flow      offload   Sess predict ACK notification from FPP
+flow_fpp_sess_predict_hit_many          9977        0 info      flow      offload   Sess predict hit, use many times
+flow_fpp_sess_predict_delete            8303        0 info      flow      offload   Sess predict ACK delete notification to FPP
+flow_fpp_sess_pred_stat_ack            20140        0 info      flow      offload   Sess predict status from FPP being ACKed
+flow_fpp_sess_owner_tentative          47926        0 drop      flow      offload   Sess owner message in tentative state
+flow_fpp_session_teardown          292249899     1074 info      flow      offload   FPP session teardown message to FPP
+flow_fpp_dipp_sess_not_found               1        0 drop      flow      offload   FPP Sess bind NACK session lookup Failed
+flow_fpp_self_sess_req_submitted         502        0 info      flow      offload   Self Initiated Session Setup Request Submitted
+flow_fpp_self_sess_succeed               502        0 info      flow      offload   Self Initiated Session Setup Secceed
+flow_fpp_self_sess_bind                  502        0 info      flow      offload   Self Initiated Session Setup Bind
+flow_fpp_self_sess_bind_ack              502        0 info      flow      offload   Self Initiated Session Setup Bind Ack
+flow_fpp_owner_no_forward_session       9575        0 drop      flow      offload   FPP - No forward session found during owner processing 
+flow_fpp_owner_query_retry             38351        0 info      flow      offload   FPP - session owner query retries
+flow_fpp_owner_query_max_retries        9575        0 drop      flow      offload   FPP - session owner queury max retries exceed
+flow_predict_session_replaced            379        0 info      flow      pktproc   Sess predict install, found existing predict and changed its parent
+flow_ip_cksm_sw_validation         7900050528    29279 info      flow      pktproc   Packets for which IP checksum validation was done in software
+flow_tcp_cksm_sw_validation        7900050528    29279 info      flow      pktproc   Packets for which TCP checksum validation was done in software
+flow_allow_preneg_ingress_lacp           487        0 info      flow      pktproc   LACP packets allowed to ingress for pre-negotiation
+flow_allow_preneg_egress_lacp             22        0 info      flow      pktproc   LACP packets allowed to egress for pre-negotiation
+flow_drop_preneg_egress                    1        0 info      flow      pktproc   Packets not allowed to egress for pre-negotiation
+appid_ident_by_icmp                  4408126       13 info      appid     pktproc   Application identified by icmp type
+appid_ident_by_ip                       8078        0 info      appid     pktproc   Application identified by ip protocol
+appid_ident_by_simple_sig           79310814      275 info      appid     pktproc   Application identified by simple signature
+appid_post_pkt_queued                     82        0 info      appid     resource  The total trailing packets queued in AIE
+appid_ident_by_sport_first                15        0 info      appid     pktproc   Application identified by L4 sport first
+appid_ident_by_dport_first          91405939      348 info      appid     pktproc   Application identified by L4 dport first
+appid_ident_by_sport                      19        0 info      appid     pktproc   Application identified by L4 sport
+appid_ident_by_dport                  942301        5 info      appid     pktproc   Application identified by L4 dport
+appid_proc                         151778231      591 info      appid     pktproc   The number of packets processed by Application identification
+appid_unknown_max_pkts                463689        1 info      appid     pktproc   The number of unknown applications caused by max. packets reached
+appid_unknown_udp                      37553        0 info      appid     pktproc   The number of unknown UDP applications after app engine
+appid_unknown_fini                    736010        2 info      appid     pktproc   The number of unknown applications
+appid_unknown_fini_empty            44815046      103 info      appid     pktproc   The number of unknown applications because of no data
+nat_static_xlat                        76069        0 info      nat       resource  The total number of static NAT translate called
+nat_static_release                     76020        0 info      nat       resource  The total number of static NAT release called
+nat_dynamic_port_xlat               96080124      369 info      nat       resource  The total number of dynamic_ip_port NAT translate called
+nat_dynamic_port_release            96048091      360 info      nat       resource  The total number of dynamic_ip_port NAT release called
+nat_alt_srcnat_xlat                      502        0 info      nat       pktproc   Implicit srcnat translated
+nat_alt_srcnat_release                   502        0 info      nat       pktproc   Implicit srcnat released
+dfa_sw                             4363110929    14686 info      dfa       pktproc   The total number of dfa match using software
+dfa_sw_offload                      38723803       15 info      dfa       pktproc   The total number of software post dfa offload
+tcp_drop_packet                       142722        0 warn      tcp       pktproc   packets dropped because of failure in tcp reassembly
+tcp_syn_missing                        41562        0 info      tcp       pktproc   miss SYN packet for tcp session
+tcp_synack_invalid                         1        0 info      tcp       pktproc   SYNACK packet received for tcp session not matching the SYN
+tcp_out_of_sync                         1820        0 warn      tcp       pktproc   can't continue tcp reassembly because it is out of sync 
+tcp_invalid_ts_option                    436        0 drop      tcp       pktproc   tcp packets with invalid timestamp option
+tcp_case_1                             23594        0 info      tcp       pktproc   tcp reassembly case 1
+tcp_case_2                          60133401      194 info      tcp       pktproc   tcp reassembly case 2
+tcp_case_3                             74659        0 info      tcp       pktproc   tcp reassembly case 3
+tcp_case_4                              1065        0 info      tcp       pktproc   tcp reassembly case 4
+tcp_drop_out_of_wnd                  2511593        1 warn      tcp       resource  out-of-window packets dropped
+tcp_exceed_flow_oo_seg_limit              21        0 warn      tcp       resource  out-of-window packets dropped due to the limitation on tcp out-of-order queue size
+tcp_exceed_flow_seg_limit              61512        0 warn      tcp       resource  packets dropped due to the limitation on tcp out-of-order queue size
+tcp_new_syn                           302859        0 warn      tcp       pktproc   A new SYN packet in tcp session
+tcp_clear_urg                          35647        0 info      tcp       pktproc   urgent flag and pointer cleared
+tcp_flag_zero                              4        0 drop      tcp       pktproc   tcp flag is zero
+tcp_fptcp_fast_retransmit              28442        0 info      tcp       pktproc   packets for fptcp fast retransmit
+tcp_fptcp_consolidate                 428552        0 info      tcp       pktproc   fptcp consolidated segments smaller than mss
+tcp_fptcp_consolidate_realloc         212071        0 info      tcp       pktproc   fptcp consolidated segments smaller than mss, buffer reallocation needed
+tcp_mptcp_strip                            2        0 info      tcp       pktproc   number of tcp mptcp options stripped
+tcp_rst_after_challenge                 2767        0 info      tcp       pktproc   c2s rst received after s2c challenge ack
+tcp_fptcp_rxmt                        123051        0 info      tcp       pktproc   fptcp full retransmissions
+tcp_fptcp_skip_sack                   603951        1 info      tcp       pktproc   fptcp avoided sending sack segments
+tcp_fptcp_false_fr_end                 67267        0 info      tcp       pktproc   fptcp incorrectly terminated false recovery
+tcp_fptcp_skip_delack                   3363        0 info      tcp       pktproc   fptcp zero window skip delayed ack
+tcp_fptcp_send_delack                1830728       20 info      tcp       pktproc   fptcp sending delayed ack
+tcp_fptcp_zero_window                  12688        0 info      tcp       pktproc   fptcp zero window advertized
+tcp_fptcp_rxmt_end_fr                   3828        0 info      tcp       pktproc   fptcp retransmission stopping fast recovery
+tcp_fptcp_max_rxmt                        61        0 info      tcp       pktproc   fptcp max retransmission happened
+tcp_fptcp_no_decrease                 190391        0 info      tcp       pktproc   no decrease in congestion window needed
+ctd_tdb_changed                          290        0 info      ctd       pktproc   tdb was changed for a session
+ctd_lookup_null                            1        0 info      ctd       pktproc   lookup is null
+ctd_sml_exit                           10162        0 info      ctd       pktproc   The number of sessions with sml exit
+ctd_sml_exit_detector_i             78791975      310 info      ctd       pktproc   The number of sessions with sml exit in detector i 
+ctd_sml_set_suspend                    20713        0 info      ctd       pktproc   The number of decoder suspend requests
+ctd_sml_unset_suspend              1931543333     2675 info      ctd       pktproc   The number of decoder resume requests
+appid_bypass_no_ctd                  3587345       17 info      appid     pktproc   appid bypass due to no ctd
+ctd_handle_reset_and_url_exit        5160214       25 info      ctd       pktproc   Handle reset and url exit
+ctd_inner_decode_exceed_flow_limit   2638954       10 info      ctd       pktproc   Inner decoder exceeds limit. Replaced the oldest inner decoder.
+ctd_tcp_bypass                            15        0 info      ctd       pktproc   session skip L7 proc in tcp reassembly
+ctd_err_bypass                         10162        0 info      ctd       pktproc   ctd error bypass
+ctd_err_sw                             76509        0 info      ctd       pktproc   ctd sw error
+ctd_switch_decoder                    178522        1 info      ctd       pktproc   ctd switch decoder
+ctd_stop_proc                         178683        1 info      ctd       pktproc   ctd stops to process packet
+ctd_sml_vm_run_token_failure              96        0 info      ctd       pktproc   Run token failure
+ctd_run_detector_i                  79895289      315 info      ctd       pktproc   run detector_i
+ctd_sml_vm_run_impl_opcodeexit      73796096      285 info      ctd       pktproc   SML VM opcode exit
+ctd_sml_vm_run_impl_immed8000       22225285      150 info      ctd       pktproc   SML VM immed8000
+ctd_sml_vm_run_impl_eval                  14        0 info      ctd       pktproc   SML VM eval
+ctd_sml_vm_run_eval_zip_ratio          70306        0 info      ctd       pktproc   SML VM eval zip ratio
+ctd_sml_vm_run_skip_trigger_err           82        0 info      ctd       pktproc   SML VM RUN SKIP trigger error
+ctd_zip_decompress_failure                 1        0 error     ctd       pktproc   Zip decompress failures
+ctd_decode_filter_chunk_small             14        0 info      ctd       pktproc   Packets with small chunks
+ctd_decode_filter_chunk_normal        313090        0 info      ctd       pktproc   Packets with normal chunks
+ctd_decode_filter_QP                       1        0 info      ctd       pktproc   decode filter QP
+ctd_mime_boundary_not_matched             48        0 info      ctd       pktproc   mime boundary not matched
+ctd_sml_vm_eval_2                         14        0 info      ctd       pktproc   sml vm eval 2
+ctd_sml_opcode_set_file_type         4939396       11 info      ctd       pktproc   sml opcode set file type
+ctd_tcpseq_overflow                      134        0 info      ctd       pktproc   The number of sessions with tcpseq overflow
+ctd_file_forward                          49        0 info      ctd       pktproc   The number of file forward found
+ctd_token_match_overflow              930054        3 info      ctd       pktproc   The token match overflow
+ctd_filter_both_dir                        2        0 warn      ctd       pktproc   The number of doing filter in both direction
+ctd_filter_decode_failure_zip             13        0 error     ctd       pktproc   Number of decode filter failure for zip
+ctd_filter_decode_failure_qpdecode         1        0 error     ctd       pktproc   Number of decode filter failure for qpdecode
+ctd_bloom_filter_nohit             151948555      586 info      ctd       pktproc   The number of no match for virus bloom filter
+ctd_bloom_filter_hit                      55        0 info      ctd       pktproc   The number of match for virus bloom filter
+ctd_sml_cache_conflict                  4043        0 info      ctd       pktproc   The number of sml cache conflict
+ctd_orig_url_cache_miss                 4609        0 warn      ctd       pktproc   The number of ctd original url cache missed
+ctd_fwd_session_init                      49        0 info      ctd       pktproc   Forward to varrcvr: number of successful action init
+ctd_fwd_session_proxy_deny                 6        0 info      ctd       pktproc   Forward to varrcvr: action init denied for decrypted sessions
+ctd_fwd_session_send                   13090        0 info      ctd       pktproc   Forward to varrcvr: number of successful action send
+ctd_fwd_session_fini                      49        0 info      ctd       pktproc   Forward to varrcvr: number of successful action fini
+ctd_fwd_session_cancel_send               36        0 info      ctd       pktproc   Forward to varrcvr: number of cancel requests sent
+ctd_fwd_err_tcp_state               79239627      313 info      ctd       pktproc   Forward to varrcvr error: TCP in establishment when session went away
+ctd_sess_hash_l                        13978        0 info      ctd       resource  CTD Feature Session Hash Large Outstanding Count
+ctd_sess_hash_s                          232        0 info      ctd       resource  CTD Feature Session Hash Small Outstanding Count
+ctd_sess_hash_exceed_limit            674061        0 info      ctd       resource  CTD Feature Session Hash Exceed limit LRU count
+ctd_wif_url_fwd_start_sig                  1        0 info      ctd       pktproc   wif url fwd start-signature counter
+flow_fwd_fwd_cnt                   13848863978    40650 info      flow      pktproc   Packets transmitted through fwd_fwd
+ctd_cleartext_proxy_start                 21        0 info      ctd       pktproc   Ctd session with cleartext proxy
+ctd_siptcp_noalg_session                 976        0 info      ctd       pktproc   SIP TCP session without ALG
+ctd_pkt_hold_url                           4        0 info      ctd       pktproc   Number of packets hold-wait for url category lookup
+fbo_pkt_enqueue                         5351        0 info      fbo       pktproc   packet enqueued while waiting for offload
+fbo_pkt_dequeue                         5351        0 info      fbo       pktproc   packet dequeued after offload is done
+aho_request                                1        0 info      aho       resource  The AHO outstanding requests
+aho_sw_offload_unmatched_type         496395        1 error     aho       offload   when getting returned request from sw offload, type in session was not matched
+aho_too_many_matches                     717        0 info      aho       pktproc   too many signature matches within one packet
+aho_too_many_mid_res                     287        0 info      aho       pktproc   too many signature middle results within one packet
+aho_too_many_aho_matches                4848        0 info      aho       pktproc   too many preprocessed AHO/PSCAN chunks matched within one packet.
+aho_too_many_retries                     335        0 info      aho       pktproc   too many retries needed for AHO/PSCAN matching within one packet.
+aho_sw_offload                     6631127393    16534 info      aho       pktproc   The total number of software aho offload
+ctd_sw_offload_state_verify_failed     75961        0 info      ctd       pktproc   when getting returned request from sw offload, session's state was changed
+ctd_pscan_sw                       8281892915    21358 info      ctd       pktproc   The total usage of software for pscan
+ctd_exceed_queue_limit                 76413        0 warn      ctd       resource  The number of packets queued in ctd exceeds per session's limit, action bypass
+ctd_predict_queue_deque                 8302        0 info      ctd       pktproc   ctd predict queue deque
+ctd_predict_queue_enque                 8302        0 info      ctd       pktproc   ctd predict queue got enque due to predict waiting fpp
+ctd_appid_reassign                  27501103      110 info      ctd       pktproc   appid was changed
+ctd_appid_reset                          161        0 info      ctd       pktproc   go back to appid
+ctd_decoder_reassign                  182647        1 info      ctd       pktproc   decoder was changed
+ctd_skip_offset_error                 205451        0 warn      ctd       resource  skip offset error
+ctd_url_block                         841999        3 info      ctd       pktproc   sessions blocked by url filtering
+ctd_process                        244432429      939 info      ctd       pktproc   session processed by ctd
+ctd_pkt_slowpath                   8189955608    20374 info      ctd       pktproc   Packets processed by slowpath
+ctd_pkt_slowpath_suspend_vm          8280473       34 info      ctd       pktproc   Packets bypassed CTD at VM stage
+ctd_pkt_slowpath_suspend_regex         24182        0 info      ctd       pktproc   Packets bypassed CTD at regex stage
+ctd_fini_with_wqe_2_fpga              496416        1 info      ctd       pktproc   session ends with wqe in fpga
+ctd_fini_with_wqe_2_fpga_preapp       496416        1 info      ctd       pktproc   pre-app session ends with wqe in fpga
+ctd_detector_discard                   14031        0 info      ctd       pktproc   session discarded by detector
+ctd_hitcount_period_update               931        0 info      ctd       system    Number of Policy Hit Count periodical update
+ha_msg_sent                        5129280129    17446 info      ha        system    HA: messages sent
+ha_msg_recv                          5539655        0 info      ha        system    HA: messages received
+ha_session_setup_msg_sent          286934385     1044 info      ha        pktproc   HA: session setup messages sent
+ha_session_setup_msg_recv             277115        0 info      ha        pktproc   HA: session setup messages received
+ha_session_teardown_msg_sent       286922902     1063 info      ha        pktproc   HA: session teardown messages sent
+ha_session_teardown_msg_recv          275173        0 info      ha        pktproc   HA: session teardown messages received
+ha_session_update_msg_sent         4215436009    14241 info      ha        pktproc   HA: session update messages sent
+ha_session_update_msg_recv           4485392        0 info      ha        pktproc   HA: session update messages received
+ha_predict_add_msg_sent                 8281        0 info      ha        pktproc   HA: predict session add messages sent
+ha_predict_add_msg_recv                    3        0 info      ha        pktproc   HA: predict session add messages received
+ha_predict_delete_msg_sent              8281        0 info      ha        pktproc   HA: predict session delete messages sent
+ha_predict_delete_msg_recv                 3        0 info      ha        pktproc   HA: predict session delete messages received
+ha_predict_update_msg_sent               646        0 info      ha        pktproc   HA: predict session update messages sent
+ha_predict_update_msg_recv                 1        0 info      ha        pktproc   HA: predict session update messages received
+ha_arp_update_msg_sent              19675369       73 info      ha        pktproc   HA: ARP update messages sent
+ha_arp_update_msg_recv                 18909        0 info      ha        pktproc   HA: ARP update messages received
+ha_arp_delete_msg_sent                   308        0 info      ha        pktproc   HA: ARP delete messages sent
+ha_ipsec_update_msg_sent           320293572     1024 info      ha        pktproc   HA: IPSec sequence number update messages sent
+ha_ipsec_update_msg_recv              482858        0 info      ha        pktproc   HA: IPSec sequence number update messages received
+ha_predict_modify_msg_sent               376        0 info      ha        pktproc   HA: predict session modify messages sent
+ha_sess_upd_notsent_unsyncable     126093031      722 info      ha        system    HA session update message not sent: session not syncable
+ha_sess_upd_notsent_flow           7129378964    24617 info      ha        system    HA session update message not sent: session type not flow
+ha_link_arp_recv                        9380        0 info      ha        system    HA2 link ARP received
+ha_nat_policy_mismatch                 15463        0 warn      ha        system    HA NAT session sync: policy mismatch
+ha_err_decap                             202        0 error     ha        system    Packets dropped: HA message decapsulation error
+ha_err_decap_proto                       202        0 error     ha        system    Packets dropped: HA message protocol decapsulation error
+ha_err_novalid_arp_update                 22        0 error     ha        system    Packets dropped: HA Not valid ARP update error
+ha_update_no_session                   92570        0 info      ha        system    HA session update message does not match a session
+ha_update_to_setup                     75746        0 info      ha        system    HA session update message to setup a session
+ha_update_on_dp0                     4409646        0 info      ha        system    HA session update message on DP0
+ha_update_to_dp0_race                  16824        0 info      ha        system    HA session update message on DP0 when session ID is different
+log_scan_cnt                              28        0 info      log       system    Number of scan logs
+log_flood_cnt                              3        0 info      log       system    Number of flood logs
+log_pkt_cnt                             3936        0 info      log       system    Number of invalid packet logs
+log_url_cnt                         85065142      331 info      log       system    Number of url logs
+log_urlcontent_cnt                    417877        1 info      log       system    Number of url content logs
+log_uid_req_cnt                     23654912       71 info      log       system    Number of uid request logs
+log_spyware_cnt                           33        0 info      log       system    Number of spyware logs
+log_vulnerability_cnt                1629054        6 info      log       system    Number of vulnerability logs
+log_traffic_cnt                    367582743     1176 info      log       system    Number of traffic logs
+log_pkt_diag_us                        52445        0 info      log       system    Time (us) spent on writing packet-diag logs
+log_http_hdr_cnt                     1533704        4 info      log       system    Number of HTTP hdr field logs
+log_decrypt_cnt                          137        0 info      log       system    Number of decrypt logs
+log_decrypt_bytes                      41715        0 info      log       system    Decrypt log byte count
+log_threat_loss_cnt                       28        0 info      log       resource  Number of threat logs that are lost
+ctd_http_range_response               180153        0 info      ctd       system    Number of HTTP range responses detected by ctd
+log_suppress                         8483061       30 info      log       system    Logs suppressed by log suppression
+log_devid_fp_http_lookup              843386        2 info      log       system    Number of attempts in http sampling
+proxy_process                          71241        0 info      proxy     pktproc   Number of flows go through proxy
+proxy_invalid_flow                       808        0 info      proxy     resource  Number of invalid proxy flows
+proxy_unhandled_icmp                     440        0 info      proxy     resource  Number of unhandled ICMP error messages in proxy
+proxy_ssl_unsupported_cipher              21        0 info      proxy     pktproc   Number of ssl sessions using unsupported cipher
+proxy_exclude_add                         22        0 info      proxy     pktproc   Number of sessions added to the exclude cache
+proxy_wait_pkt_drop                     1712        0 drop      proxy     pktproc   The number of packets get dropped because of waiting status in ssl proxy 
+proxy_l2hdr_shrinked                 2293108        0 info      proxy     pktproc   Layer 2 header shrinked than original length
+proxy_l2hdr_extended                44333323      372 info      proxy     pktproc   Layer 2 header extended than original length
+proxy_dns_resolve_from_cache             505        0 info      proxy     pktproc   Number of DNS resolved from DP cache
+proxy_dns_request                        566        0 info      proxy     pktproc   Number of DNS request to MP
+proxy_dns_response                       566        0 info      proxy     pktproc   Number of DNS response from MP
+proxy_cleartext_ingress                   21        0 info      proxy     pktproc   Number of cleartext proxy session started with proxy ingress
+proxy_sessions                            22        0 info      proxy     pktproc   Current number of proxy sessions
+proxy_fpga_engine_loaded                  39        0 info      proxy     pktproc   fpga Engine loaded for SSL offload
+proxy_ssl_offload_method_created           1        0 warn      proxy     resource  Proxy successfully created offload function pointers
+ssl_cert_cache_miss                       13        0 info      ssl       pktproc   Number of SSL certificate cache miss
+ssl_unsupported_cipher                    21        0 warn      ssl       pktproc   Number of SSL sessions using unsupported cipher
+ssl_client_sess_ticket                 68806        0 info      ssl       pktproc   Number of ssl session with client sess ticket ext
+ssl_unsupported_server_extension         882        0 warn      ssl       pktproc   Number of unsupported ssl ext in server hello
+ssl_unexpected_record_type                40        0 info      ssl       pktproc   Number of ssl session with unexpected record type
+uid_gid_rcv                            44027        0 info      uid       pktproc   Number of user group info received
+uid_ipinfo_rcv                        662621        2 info      uid       pktproc   Number of ip user info received
+url_db_request                        294471        1 info      url       pktproc   Number of URL database request
+url_db_reply                          561963        2 info      url       pktproc   Number of URL reply
+url_flow_state_invalid                    63        0 info      url       session   The session's state was changed when receiving url response
+url_request_timeout                        5        0 info      url       pktproc   The url category request is timedout
+url_request_pkt_drop                   36430        0 drop      url       pktproc   The number of packets get dropped because of waiting for url category request 
+url_session_not_in_wait                 9888        0 error     url       system    The session is not waiting for url 
+zip_process_total                    5952455        4 info      zip       pktproc   The total number of zip engine decompress process
+zip_process_stop                      213254        0 info      zip       pktproc   The number of zip decompress process stops lack of output buffer
+zip_process_failure                       13        0 info      zip       pktproc   The number of failures for zip decompress process
+zip_process_sw                        465437        0 info      zip       pktproc   The total number of zip software decompress process
+zip_result_drop                          455        0 warn      zip       pktproc   The number of zip results dropped
+zip_ctx_reuse                          43826        0 info      zip       pktproc   The number of reuse of zip contexts
+zip_ctx_free_race                        455        0 info      zip       pktproc   The number of attempted frees of active zip contexts
+zip_hw_in                          6032516774     6526 info      zip       pktproc   The total input data size to hardware zip engine
+zip_hw_out                         33063008916    17644 info      zip       pktproc   The total output data size from hardware zip engine
+zip_sw_in                          6582312111     6526 info      zip       pktproc   The total input data size to software zip engine
+zip_sw_out                         35727886131    17644 info      zip       pktproc   The total output data size from software zip engine
+ssl_hsm_up_down_event_rcv                  1        0 info      ssl       pktproc   The number of HSM up/down events received
+ssl_sess_cache_msg_to_mp              133628        0 info      ssl       pktproc   Number of SSL session cache msg sent to MP
+ssl_sess_cache_msg_from_mp             64042        0 info      ssl       pktproc   Number of SSL session cache msg received from  MP
+ssl_rsa_sign_hw                        69876        0 info      ssl       offload   The number of rsa sign with hw
+ssl_rsa_verify_hw                      70332        0 info      ssl       offload   The number of rsa verify with hw
+ssl_ecdh_compute_key_hw                70055        0 info      ssl       offload   The number of ecdh compute key with hw
+ssl_hw                                210263        0 info      ssl       pktproc   SSL crypto operations sent to HW
+tcp_modi_q_pkt_alloc                     545        0 info      tcp       pktproc   packets allocated by tcp modification queue
+tcp_modi_q_pkt_free                      545        0 info      tcp       pktproc   packets freed by tcp modification queue
+tcp_fin_q_pkt_alloc                      240        0 info      tcp       pktproc   packets allocated by tcp FIN queue
+tcp_fin_q_pkt_free                       240        0 info      tcp       pktproc   packets freed by tcp FIN queue
+tcp_fin_q_hit                             22        0 info      tcp       pktproc   packets that trigger FIN queue retransmission
+ctd_smb_outoforder_chunks             371985        0 info      ctd       pktproc   Number of out-of-order SMB chunks
+ctd_fwd_session_decoder_abort         371985        0 info      ctd       pktproc   Number of wf fwd session aborts
+http2_process                             21        0 info      http2     pktproc   Number of http2 connection process
+http2_frame_buf_alloc_failure              5        0 warn      http2     resource  http2 frame buf allocation failure
+http2_connection_window_update_sent        21        0 info      http2     pktproc   Number of http2 connection window updates sent
+http2_goaway_recv                         21        0 info      http2     pktproc   Number of http2 GOAWAY frames received
+http2_frame_drop_egress                   21        0 info      http2     pktproc   Number of http2 frame dropped at egress stage
+http2_goaway_sent                         21        0 info      http2     pktproc   Number of http2 goaway frames sent
+ctd_mlav_begin                          4699        0 info      ctd       pktproc   Start of MLAV ngram
+ctd_mlav_store_extra_feature           27654        0 info      ctd       pktproc   store MLAV extra feature
+ctd_mlav_hash_inc                         89        0 info      ctd       pktproc   MLAV hash increment
+ctd_mlav_free_finish_state              4696        0 info      ctd       pktproc   Free finished mlav state
+ctd_url_decoder_used                  192458        0 info      ctd       pktproc   URL decoder triggered
+ctd_prefiltering_no_mlav              260298        0 info      ctd       pktproc   MLAV prefiltering
+ctd_mlav_no_feature_state               4593        0 info      ctd       pktproc   MLAV cannot find feature state
+ctd_wfrt_over_two_patterns              3047        0 info      ctd       pktproc   WF RT more than two patterns generated
+ctd_mlav_block_cache_miss           84370745      328 info      ctd       pktproc   The number of mlav block cache missed
+ctd_mica_mlav_prefiltering_benign       1987        0 info      ctd       pktproc   The number of mica mlav prefiltering benign
+ctd_mica_mlav_prefiltering              4609        0 info      ctd       pktproc   The number of mica mlav prefiltering
+--------------------------------------------------------------------------------
+Total counters shown: 514
+--------------------------------------------------------------------------------
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show counter global | match w_fwd_mtu_excee
+flow_fwd_mtu_exceeded                 324536        0 info      flow      forward   Packets lengths exceeded MTU
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show counter global | match ow_ipfrag_fr
+flow_ipfrag_free                      336702        0 info      flow      ipfrag    IP fragments freed after defragmentation
+flow_ipfrag_frag                      650116        0 info      flow      ipfrag    IP fragments transmitted
+flow_ipfrag_free_fraglist               2315        0 info      flow      ipfrag    IP fragment free fraglist
+ahighland@PA-5220-VF-A(active)> 
