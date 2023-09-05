@@ -33,6 +33,16 @@ Understand WAN
 
 
 
+Add NetOps@crossriver.com to the following;
+From: no-reply@megaport.com
+From: sre@crossriver.com w/r/t [SRE Ticket #543223] FW: ALARM: "Tunnel is_Down" in US East (N. Virginia)
+From: NOC@crossriver.com w/r/t FW: ALARM: "Tunnel is_Down" in US East (N. Virginia)
+From: noreply@notifications.newrelic.com   Monitor failed for location CRB AWS on 'Arix Prod - Loan Creation - AWS' - Issue 1723e47b-f8fd-4d49-8c92-5308997b187b ?? not sure if I should add this. Review before requesting
+From: CRB Monitoring System <noreply@crossriver.com>  Weekly Switch Report
+
+
+
+Who/what is the MerakiTeam (MerakiTeam@crossriver.com)?
 
 
 
@@ -51,6 +61,10 @@ ahighland@crossriver.com
 
 ph+472312
 Teaneck1
+
+FG-90G-BDL-950-12  = 2,850.90
+Palo Alto Networks PA-460 - security appliance = 5,191.99
+
 
 
 Admin_Pcs
