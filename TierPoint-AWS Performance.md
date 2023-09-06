@@ -48,31 +48,35 @@ Transfer large file from CRB07 to CRB08
 
 1) Connect to CRB07
 2) Install Wireshark
-3) From Command Prompt issue the following commands
-    - ipconfig /all
-    - netsh interface ipv4 show subinterfaces
-    - netstat -s
-    - netstat -e
-    - netstat -s | findstr Errors
+3) From Command Prompt, issue the following commands
+  - ipconfig /all
+  - netsh interface ipv4 show subinterfaces
+  - netstat -s
+  - netstat -e
+  - netstat -s | findstr Errors
 4) Save Command Prompt results to a network share
 
+ 
+
+ 
 
 Connect to CRB08
 5) Install Wireshark
-6) From Command Prompt issue the following commands
-    - ipconfig /all
-    - netsh interface ipv4 show subinterfaces
-    - netstat -s
-    - netstat -e
-    - netstat -s | findstr Errors
+6) From Command Prompt, issue the following commands
+  - ipconfig /all
+  - netsh interface ipv4 show subinterfaces
+  - netstat -s
+  - netstat -e
+  - netstat -s | findstr Errors
 7) Save Command Prompt results to a network share
+
+ 
 
 8) Start Wireshark on CRB07
 9) Start Wireshark on CRB08
 10) Transfer the large file from CRB07 to CRB08
 11) Take a screen capture of the transfer illustrating the transfer speed
 12) Stop and save both Wireshark results to a network share
-
 
 
 
