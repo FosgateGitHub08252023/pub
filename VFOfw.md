@@ -8317,3 +8317,3825 @@ flow_ipfrag_free                      336702        0 info      flow      ipfrag
 flow_ipfrag_frag                      650116        0 info      flow      ipfrag    IP fragments transmitted
 flow_ipfrag_free_fraglist               2315        0 info      flow      ipfrag    IP fragment free fraglist
 ahighland@PA-5220-VF-A(active)> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface 
+  ae1      ae1
+  <value>  Show for given interface
+
+ahighland@PA-5220-VF-A(active)> show qos interface 
+
+Invalid syntax.
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 counter
+
+qid   name                 pass bytes       WRED drop   policing drop
+--------------------------------------------------------------------------------
+0     default         142625124559728               0               0
+-2    bypass                        0               0               0
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 
+> counter             Show software based QoS counters
+> hw-counter          Show HW QOS counters
+> match-rule          Show members of regular traffic configuration
+> show-all-levels     Show qos cfg for all platforms
+> show-bypass-node    Show HW QoS bypass node stats for 5000 platforms
+> show-regular-node   Show HW QoS regular node stats for 5000 platforms
+> show-tunnel-node    tunnel QoS counters
+> throughput          Show throughput (last 3 seconds) of all classes under given node-id
+> tunnel-throughput   Show throughput (last 3 seconds) of all classes under given tunnel interface
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 hw-counter 
+
+qid   name                 pass bytes       WRED drop   policing drop
+--------------------------------------------------------------------------------
+0     default         142631033678105               0               0
+-2    bypass                        0               0               0
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 match-rule 
+
+QoS match rule for interface ae1:
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 match-rule 
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-all-levels 
+
+
+        <nodes>
+        <node qid="0">
+                <name>default-group</name>
+                <parent-qid>22</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951762</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="1">
+                <name>tunnel.4</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951763</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>123312</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>123312</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="2">
+                <name>tunnel</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951763</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>3686670320</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>3</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>6956325496</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>1</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>10642995816</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="3">
+                <name>tunnel.3</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951764</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="4">
+                <name>tunnel.10</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951764</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>920</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>920</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="5">
+                <name>tunnel.21</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951765</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="6">
+                <name>tunnel.8</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951765</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>1012410906</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>1447</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>1012412353</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="7">
+                <name>tunnel.11</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951766</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>9884570</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>9884570</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="8">
+                <name>tunnel.1</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951766</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>98686</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>98686</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="9">
+                <name>tunnel.13</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951767</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>61656</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>61656</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="10">
+                <name>tunnel.15</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951767</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>174186</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>174186</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="11">
+                <name>tunnel.2</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951767</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>241821309</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>1</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>24914532864</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>741610</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>25157095783</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="12">
+                <name>tunnel.16</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951768</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>621308</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>621308</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="13">
+                <name>tunnel.17</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951768</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>26632883524</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>1</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>26632883524</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="14">
+                <name>tunnel.5</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951769</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>951709</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>951709</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="15">
+                <name>tunnel.6</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951769</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="16">
+                <name>tunnel.18</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951770</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>61656</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>61656</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="17">
+                <name>tunnel.20</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951770</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>92736</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>92736</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="18">
+                <name>tunnel.19</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951771</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>115618</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>115618</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="19">
+                <name>tunnel.22</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951771</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="20">
+                <name>tunnel.7</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951772</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>123312</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>123312</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="21">
+                <name>tunnel.12</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951772</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>3156823558</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>1</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>3156824546</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="22">
+                <name>regular-traffic</name>
+                <parent-qid>25</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951772</timestamp></node>
+        <node qid="23">
+                <name>tunnel-traffic</name>
+                <parent-qid>25</parent-qid>
+                <eg-bw>5000000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951772</timestamp></node>
+        <node qid="-2">
+                <name>bypass-traffic</name>
+                <parent-qid>25</parent-qid>
+                <eg-bw>5000000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951772</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>5000000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="25">
+                <name>ae1</name>
+                <parent-qid>-1</parent-qid>
+                <eg-bw>5000000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>697951773</timestamp></node></nodes>
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 
+> counter             Show software based QoS counters
+> hw-counter          Show HW QOS counters
+> match-rule          Show members of regular traffic configuration
+> show-all-levels     Show qos cfg for all platforms
+> show-bypass-node    Show HW QoS bypass node stats for 5000 platforms
+> show-regular-node   Show HW QoS regular node stats for 5000 platforms
+> show-tunnel-node    tunnel QoS counters
+> throughput          Show throughput (last 3 seconds) of all classes under given node-id
+> tunnel-throughput   Show throughput (last 3 seconds) of all classes under given tunnel interface
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-bypass-node
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-regular-node 
+  regular   regular 
+  <value>   <0-65535> 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-regular-node regular 
+  |        Pipe through a command
+  <Enter>  Finish input
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-regular-node regular 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-tunnel-node 
+  tunnel   tunnel 
+  <value>  <0-65535> 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-tunnel-node tunnel 
+  |        Pipe through a command
+  <Enter>  Finish input
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 show-tunnel-node tunnel 
+
+        <nodes>
+        <node qid="1">
+                <name>tunnel.4</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005135</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>127680</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>127680</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="2">
+                <name>tunnel</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005135</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>3839552848</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>7165121811</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>11004674659</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="3">
+                <name>tunnel.3</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005136</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="4">
+                <name>tunnel.10</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005136</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>920</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>920</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="5">
+                <name>tunnel.21</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005137</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="6">
+                <name>tunnel.8</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005137</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>1054417079</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>1447</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>1054418526</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="7">
+                <name>tunnel.11</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005138</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>10122100</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>10122100</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="8">
+                <name>tunnel.1</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005138</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>103459</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>103459</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="9">
+                <name>tunnel.13</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005139</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>63840</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>63840</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="10">
+                <name>tunnel.15</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005139</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>180258</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>180258</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="11">
+                <name>tunnel.2</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005139</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>250944838</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>25529921161</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>770018</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>25781636017</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="12">
+                <name>tunnel.16</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005140</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>627328</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>627328</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="13">
+                <name>tunnel.17</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005140</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>27170884822</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>9</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>27170885556</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="14">
+                <name>tunnel.5</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005141</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>989392</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>989392</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="15">
+                <name>tunnel.6</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005141</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="16">
+                <name>tunnel.18</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005142</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>63840</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>63840</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="17">
+                <name>tunnel.20</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005142</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>96180</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>96180</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="18">
+                <name>tunnel.19</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005143</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>118007</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>118007</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="19">
+                <name>tunnel.22</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005143</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>0</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="20">
+                <name>tunnel.7</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005143</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>127680</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>1</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>127680</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node>
+        <node qid="21">
+                <name>tunnel.12</name>
+                <parent-qid>23</parent-qid>
+                <eg-bw>10000</eg-bw>
+                <em-bw>5000000</em-bw>
+                <timestamp>698005144</timestamp>
+                <classes>
+                        <class classid="1">
+                                <priority>3</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="2">
+                                <priority>2</priority>
+                                <eg-bw>10000</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="3">
+                                <priority>2</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="4">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>3285388407</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>1</qlength></class>
+                        <class classid="5">
+                                <priority>1</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="6">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="7">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class>
+                        <class classid="8">
+                                <priority>0</priority>
+                                <eg-bw>1</eg-bw>
+                                <em-bw>5000000</em-bw>
+                                <pass-bytes>0</pass-bytes>
+                                <wred-bytes>0</wred-bytes>
+                                <tmot-bytes>0</tmot-bytes>
+                                <delay>0</delay>
+                                <qlength>0</qlength></class></classes>
+                <pass-bytes>3285388407</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></node></nodes>
+        <summary>
+                <pass-bytes>68309623849</pass-bytes>
+                <wred-bytes>0</wred-bytes>
+                <tmot-bytes>0</tmot-bytes></summary>
+
+ahighland@PA-5220-VF-A(active)> 
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput 
+  tunnel      tunnel
+  tunnel.1    tunnel.1
+  tunnel.10   tunnel.10
+  tunnel.11   tunnel.11
+  tunnel.12   tunnel.12
+  tunnel.13   tunnel.13
+  tunnel.15   tunnel.15
+  tunnel.16   tunnel.16
+  tunnel.17   tunnel.17
+  tunnel.18   tunnel.18
+  tunnel.19   tunnel.19
+  tunnel.2    tunnel.2
+  tunnel.20   tunnel.20
+  tunnel.21   tunnel.21
+  tunnel.22   tunnel.22
+  tunnel.3    tunnel.3
+  tunnel.4    tunnel.4
+  tunnel.5    tunnel.5
+  tunnel.6    tunnel.6
+  tunnel.7    tunnel.7
+  tunnel.8    tunnel.8
+  <value>     Show throughput (last 3 seconds) of all classes under given tunnel interface
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel
+
+QoS throughput for interface ae1, node tunnel (Qid 2):
+class 3:    17385 kbps
+class 4:    37257 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.1
+
+QoS throughput for interface ae1, node tunnel.1 (Qid 8):
+class 4:        2 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.2
+
+QoS throughput for interface ae1, node tunnel.2 (Qid 11):
+class 3:     1108 kbps
+class 4:   113913 kbps
+class 6:        0 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.12
+
+QoS throughput for interface ae1, node tunnel.12 (Qid 21):
+class 4:    18969 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.13
+
+QoS throughput for interface ae1, node tunnel.13 (Qid 9):
+class 4:        0 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.17
+
+QoS throughput for interface ae1, node tunnel.17 (Qid 13):
+class 4:    83987 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.18
+
+QoS throughput for interface ae1, node tunnel.18 (Qid 16):
+class 4:        0 kbps
+
+
+ahighland@PA-5220-VF-A(active)> show qos interface ae1 tunnel-throughput tunnel.8
+
+QoS throughput for interface ae1, node tunnel.8 (Qid 6):
+class 4:        6 kbps
+
+
+ahighland@PA-5220-VF-A(active)> 
