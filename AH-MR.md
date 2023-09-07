@@ -42,3 +42,22 @@ PA local is AAA,MFA
 
 
 QkUic!cUWku!5z$5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ready for Linwood
+QoS - Shared IPSEC VPN Throughput, MTU (firewall, ESXi, EC2,)etc
+create a new tunnel over DX and a new tunnel over internet and new VR
+BGP between VRs
+May have to recreate AWS S2S to change from statis to dynamic
