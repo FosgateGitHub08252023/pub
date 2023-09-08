@@ -2,16 +2,31 @@ Misc
 
 Teva/Tahvah
 
+
 ToDo
 Disable split-tunnel
 Remove LinkSys and devices unable to send logs, support NAC
+Ignore tgw-tch-vpn-rt01 in Transit gateway route tables
+
+AWS Direct Connect > Connections = dxcon-fgjpqw2d
+WS Direct Connect > Virtual interfaces = dxvif-fgj87vog
+Direct Connect > Virtual private gateways = vgw-0164500cee72423c1
+Direct Connect > Transit gateways = tgw-0a7d8c2374fcde4bd
+
+crb_customer_dx_gateway  cgw-01e25a3156bd2a370	65000	69.210.70.91  vpn-016a24dad9ea49f17	–	tgw-0a7d8c2374fcde4bd	69.210.70.91 Static Tunnel 1	35.174.70.10	169.254.85.176/30 && Tunnel 2	52.3.65.116	169.254.105.96/30
+
+crb_customer_vpn_gateway cgw-04f8837a3a33d05e7	65000 AWS-VPN-CRB-Secondary vpn-0464275f80f564308  tgw-0a7d8c2374fcde4bd  66.206.202.202 Static  Tunnel 1	3.209.246.40	169.254.220.208/30 && Tunnel 2	54.152.170.204	169.254.168.212/30
 
 
-
+200k 
+300 miles 80mph charge 3times each charge was $20 he drove 400 miles
 
 surveyd and reviewd Linwood firewalls. ready to stage the cutover to old Linwood firewalls to the new linwood firewall. waiting for r/w access
 
 P2P
+
+SOC FW Change Group
+
 
 I'll prep the fw for israel firewall
 
@@ -39,7 +54,7 @@ From: sre@crossriver.com w/r/t [SRE Ticket #543223] FW: ALARM: "Tunnel is_Down" 
 From: NOC@crossriver.com w/r/t FW: ALARM: "Tunnel is_Down" in US East (N. Virginia)
 From: noreply@notifications.newrelic.com   Monitor failed for location CRB AWS on 'Arix Prod - Loan Creation - AWS' - Issue 1723e47b-f8fd-4d49-8c92-5308997b187b ?? not sure if I should add this. Review before requesting
 From: CRB Monitoring System <noreply@crossriver.com>  Weekly Switch Report
-
+From: no-reply@lumen.com Lumen Ticket #: 27560189, CRB GROUP, INC-5-2BC7ZBPC, Ticket Opened, Customer Ticket ID:
 
 
 Who/what is the MerakiTeam (MerakiTeam@crossriver.com)?
