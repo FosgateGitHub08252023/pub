@@ -67,7 +67,6 @@ Current network efforts/access - Peel back
     - separation of duties
     - Shlomo, Mark, helpdesk, Sunny, Yuri (linwood)
 
-Need MegaPort access. Who to ask?
 
 >>>>>Working on Next<<<<<
 
@@ -88,9 +87,18 @@ VFO to AWS performance based on current access
 
 I do IP allocation
 
+09112023
+
+Lab setup
+- FW is WIP
+- AWS waiting for approval
+- EOW ready
 
 
+Linwood ready
 
+Israel office
 
+Not Infrastructure
 
-rw w/o commit
+Peel away from others
