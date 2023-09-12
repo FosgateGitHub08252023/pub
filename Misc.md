@@ -27,6 +27,14 @@ P2P
 
 SOC FW Change Group
 
+I can ssh to the Parker FW @ 192.168.143.16
+ForLee_Parker is Parker Plaza's Device Group
+
+
+
+MS250-48 Layer 3 switch with optional PoE+
+MS350-48 Layer 3 switch with optional PoE+
+
 
 I'll prep the fw for israel firewall
 

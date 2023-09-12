@@ -20,6 +20,10 @@ kosher internet
 
 they are installing cat7, just do cat6a
 
+ruckus WAPs require higher WAP count
+missing PID
+
+
 
 https://www.cablematters.com/Blog/Networking/cat6-vs-cat6a-vs-cat7
 Cat 7 is a unique type of Ethernet cable. It is compatible with other categories of Ethernet cables,  but Cat 7 cables are not recognized by the Telecommunications Industry Association (TIA) or Electronic Industries Alliance (EIA) organizations. That lack of endorsement means it’s never really taken off as a standard, despite its impressive specifications
