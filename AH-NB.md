@@ -87,13 +87,20 @@ VFO to AWS performance based on current access
 
 I do IP allocation
 
+
+
 09112023
+
+
 
 Lab setup
 - FW is WIP
 - AWS waiting for approval
 - EOW ready
 
+
+
+ore-al
 
 Linwood ready
 
@@ -102,3 +109,14 @@ Israel office
 Not Infrastructure
 
 Peel away from others
+
+Meet CISO - will send audit reports.. said all firewalls are in scope
+
+Meet Urile - said we need to block AI and apply web filtering
+
+
+To Be Discussed on 09182023
+
+Stop point to points cancel them
+
+IP allocation should be networking bc networking will have to fix;... too many cidrs can't summarize, etc
