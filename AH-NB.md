@@ -120,3 +120,15 @@ To Be Discussed on 09182023
 Stop point to points cancel them
 
 IP allocation should be networking bc networking will have to fix;... too many cidrs can't summarize, etc
+
+
+idan
+asked windstream
+the revert works in lab
+
+pagerduty
+email when changes made
+
+let me make your lives easier
+
+JAIME DAVILA asked if FW team is in US or Israel... doesn't matter should be the message, it will get done and escalate wisely if urgent... 24/7.. also, FW team change to network team or network engineering
