@@ -3369,4 +3369,33 @@ ahighland@PA-5220-VF-A(active)>
 
 
 
+Hi,
+
+I have a test ESXi that is running on my RPI. I did the install using ESXi on Arm Fling (Build 19076756). I just tried to login and I see the message "Your evaluation license for ESXi has expired." I use this for learning and testing. Since it is on a Raspberry Pie there I can only run one or two VMs at a time. The serial number is 0000E45F012E212E and the firmware is ESXi-7.0.0-19076756-standard (VMware, Inc.).
+
+Do you have a free license and/or a very low cost license and if so, what are the differences?
+
+
+
+Also, I tried to do the product registration but I get the below message;
+
+
+Product Registration
+
+Please enter your serial number(s) / license key(s) below to register your products up to a maximum of 50.
+Invalid Serial Number(s)
+
+    0000E-45F01-2E212-E
+
+
+
+Invalid Serial Number(s)
+
+    0000E-45F01-2E212-E
+
+
+
+
+
+
 
