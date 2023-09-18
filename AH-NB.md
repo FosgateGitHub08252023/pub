@@ -115,12 +115,42 @@ Meet CISO - will send audit reports.. said all firewalls are in scope
 Meet Urile - said we need to block AI and apply web filtering
 
 
+
+
+
+
+
 To Be Discussed on 09182023
+
+
+Reached out to Windstream to confirm
+
+
+Fixed Cathy issue with Google and Twitter
+Moved tickets to my queue
+
+Remove from infra email distro
+Add to other receive groups
+
+
+Saw the push for snmp, now I'll stage another push
+Then add to monitoring. Once in Sw integrate with pager duty
+
+
+Network staging is 30% complete 
+- missing isp
+- test computers
+ip address
+
+
+
+Todo
+Clean out old queue
+Start preparing Linwood 
 
 Stop point to points cancel them
 
 IP allocation should be networking bc networking will have to fix;... too many cidrs can't summarize, etc
-
 
 idan
 asked windstream
@@ -132,3 +162,13 @@ email when changes made
 let me make your lives easier
 
 JAIME DAVILA asked if FW team is in US or Israel... doesn't matter should be the message, it will get done and escalate wisely if urgent... 24/7.. also, FW team change to network team or network engineering
+
+445 access fw open
+
+
+
+
+
+>>>>>> 09-25-2023<<<<<<
+
+
