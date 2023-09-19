@@ -5,6 +5,10 @@ Teva/Tahvah
 131.239.170.88/29 = 131.239.170.89 – 131.239.170.94
 131.239.170.96/27 = 131.239.170.97 – 131.239.170.126
 
+NAT - in security policy, use pre-NAT destionation IP and post-NAT destionation zone
+
+with regards to FiOS internet, the linksys has 5 ports, all 5 ports are lit. 2 go to fios, 2 go to fws and one to eth0 of savecom router; then port eth2 of savecom goes to port 1 of linw v 4-1 switch
+
 ToDo
 Disable split-tunnel
 Remove LinkSys and devices unable to send logs, support NAC
