@@ -32,7 +32,7 @@ BGP between VRs
  Example customer gateway device configurations for dynamic routing (BGP) = https://docs.aws.amazon.com/vpn/latest/s2svpn/cgw-dynamic-routing-examples.html
 
 
- Your customer gateway device = https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#cgw-best-practice
+ Your customer gateway device = https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html#cgw-best-practice <<<< set MTU/MSS based on ike&ipsec settings to prevent performance issues>>>>
 
 
  Creating an Active-Active VPN Tunnel with BGP in AWS = https://totaluptime.com/kb/creating-active-active-vpn-tunnel-aws-bgp/
@@ -42,4 +42,3 @@ BGP between VRs
  Need guidance with dual ISP and AWS VPN with BGP = https://www.reddit.com/r/paloaltonetworks/comments/r1c3a7/need_guidance_with_dual_isp_and_aws_vpn_with_bgp/
 
 
- 
