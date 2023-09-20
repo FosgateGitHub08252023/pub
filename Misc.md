@@ -2,6 +2,11 @@ Misc
 
 Teva/Tahvah
 
+
+clear dhcp lease all
+debug software restart process dhcp
+
+
 131.239.170.88/29 = 131.239.170.89 – 131.239.170.94
 131.239.170.96/27 = 131.239.170.97 – 131.239.170.126
 
