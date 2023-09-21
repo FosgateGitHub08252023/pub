@@ -2,7 +2,6 @@ Misc
 
 Teva/Tahvah
 
-
 clear dhcp lease all
 debug software restart process dhcp
 
@@ -13,6 +12,15 @@ debug software restart process dhcp
 NAT - in security policy, use pre-NAT destionation IP and post-NAT destionation zone
 
 with regards to FiOS internet, the linksys has 5 ports, all 5 ports are lit. 2 go to fios, 2 go to fws and one to eth0 of savecom router; then port eth2 of savecom goes to port 1 of linw v 4-1 switch
+
+
+ Joseph Galang = 192.168.165.201 from LAN_L3
+ Jesus Camacho = 172.31.112.231 from VPN_S2S_CRB_L3 and   '172.16.167.101' 'AWS' )
+ Spencer Lord = 172.31.112.222 from VPN_S2S_CRB_L3 and AWS
+ Matthew Caravello = 192.168.165.145 from LAN_L3
+ Philippe Cham = 192.168.165.205 from LAN_L3
+
+
 
 ToDo
 Disable split-tunnel
@@ -28,6 +36,43 @@ crb_customer_dx_gateway  cgw-01e25a3156bd2a370	65000	69.210.70.91  vpn-016a24dad
 
 crb_customer_vpn_gateway cgw-04f8837a3a33d05e7	65000 AWS-VPN-CRB-Secondary vpn-0464275f80f564308  tgw-0a7d8c2374fcde4bd  66.206.202.202 Static  Tunnel 1	3.209.246.40	169.254.220.208/30 && Tunnel 2	54.152.170.204	169.254.168.212/30
 
+
+
+CRB.LOCAL Domain Controllers: is DCs_crb.local in PA
+172.16.64.55 = CRB09.crb.local
+172.16.64.45 = CRB08.crb.local
+192.168.65.5 = CRB06.crb.local
+172.22.20.5 = CRB07.crb.local
+
+CRBCLOUD.COM Domain Controllers: is DCs_crbcloud.com in PA
+172.22.19.5 = CDC01.crbcloud.com
+172.22.19.6 = CDC02.crbcloud.com
+172.16.64.10 = CDC04_AWS
+172.16.64.20 = CDC05_AWS
+
+CRB.AWS Managed AD Domain Controllers:
+172.16.41.191
+172.16.23.187
+
+DCs_crbcloud.com included CDC03_DA (172.28.14.5) but his request did not include CDC03_DA
+DCs_crb.local includes CRB02_DA (172.28.14.10) but his request did not include CRB02_DA
+
+DNS_to_DCs and DCs_Access might need to be updated but that would include users
+
+CRB_Active_Directory covers the ports
+
+
+
+o   TCP 636 – LDAPS (LDAP over TLS/SSL)
+
+o   TCP 3268-3269 – Global Catalog
+
+o   TCP 1024-65535 – Ephemeral ports for RPC
+
+o   ICMP – All
+
+Comments for ticket
+What are hostnames for the two CRB.AWS Managed AD Domain Controllers?
 
 200k 
 300 miles 80mph charge 3times each charge was $20 he drove 400 miles
@@ -3373,38 +3418,3 @@ IP                                            Vsys                From    User  
 Total: 0 users
 
 ahighland@PA-5220-VF-A(active)> 
-
-
-
-
-
-Hi,
-
-I have a test ESXi that is running on my RPI. I did the install using ESXi on Arm Fling (Build 19076756). I just tried to login and I see the message "Your evaluation license for ESXi has expired." I use this for learning and testing. Since it is on a Raspberry Pie there I can only run one or two VMs at a time. The serial number is 0000E45F012E212E and the firmware is ESXi-7.0.0-19076756-standard (VMware, Inc.).
-
-Do you have a free license and/or a very low cost license and if so, what are the differences?
-
-
-
-Also, I tried to do the product registration but I get the below message;
-
-
-Product Registration
-
-Please enter your serial number(s) / license key(s) below to register your products up to a maximum of 50.
-Invalid Serial Number(s)
-
-    0000E-45F01-2E212-E
-
-
-
-Invalid Serial Number(s)
-
-    0000E-45F01-2E212-E
-
-
-
-
-
-
-
