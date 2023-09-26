@@ -171,4 +171,9 @@ JAIME DAVILA asked if FW team is in US or Israel... doesn't matter should be the
 
 >>>>>> 09-25-2023<<<<<<
 
+Linwood needs time to review. FW is not standard and someone trying new methods
+
+tell teams to standdown
+
+
 

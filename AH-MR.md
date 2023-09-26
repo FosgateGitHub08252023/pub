@@ -47,16 +47,19 @@ QkUic!cUWku!5z$5
 
 
 
-
-
-
-
-
-
-
-
 ready for Linwood
 QoS - Shared IPSEC VPN Throughput, MTU (firewall, ESXi, EC2,)etc
 create a new tunnel over DX and a new tunnel over internet and new VR
 BGP between VRs
 May have to recreate AWS S2S to change from statis to dynamic
+
+Operations objects in fw
+static DHCP reservations  - -  when will they move? in batches?
+fix switch ports in unifi
+192.168.166/
+
+165 > 187
+162 > 186
+
+192.168.187.
+

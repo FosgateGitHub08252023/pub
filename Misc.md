@@ -5,6 +5,10 @@ Teva/Tahvah
 clear dhcp lease all
 debug software restart process dhcp
 
+GP cert pwd: fBR6#RLesoD^qyK
+
+we are missing the private key
+
 
 131.239.170.88/29 = 131.239.170.89 – 131.239.170.94
 131.239.170.96/27 = 131.239.170.97 – 131.239.170.126
@@ -26,6 +30,9 @@ ToDo
 Disable split-tunnel
 Remove LinkSys and devices unable to send logs, support NAC
 Ignore tgw-tch-vpn-rt01 in Transit gateway route tables
+fix teaneak branch logs
+monitor brooklyn fw in SW
+
 
 AWS Direct Connect > Connections = dxcon-fgjpqw2d
 WS Direct Connect > Virtual interfaces = dxvif-fgj87vog
