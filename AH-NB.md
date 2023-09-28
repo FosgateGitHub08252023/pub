@@ -175,5 +175,13 @@ Linwood needs time to review. FW is not standard and someone trying new methods
 
 tell teams to standdown
 
+Weeklys with brian
+
+How long wait for commits? 
+
+creds for pafw service account
+
+DX outage... timeframe with Randy
+
 
 

@@ -56,6 +56,7 @@ May have to recreate AWS S2S to change from statis to dynamic
 Operations objects in fw
 static DHCP reservations  - -  when will they move? in batches?
 fix switch ports in unifi
+
 192.168.166/
 
 165 > 187
