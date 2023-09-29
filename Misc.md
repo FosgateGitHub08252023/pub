@@ -9,6 +9,7 @@ GP cert pwd: fBR6#RLesoD^qyK
 
 we are missing the private key
 
+192.168.165.46  b0:7b:25:06:32:16                                   reserved  kschierle2pc
 
 131.239.170.88/29 = 131.239.170.89 – 131.239.170.94
 131.239.170.96/27 = 131.239.170.97 – 131.239.170.126

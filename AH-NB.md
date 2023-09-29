@@ -183,5 +183,9 @@ creds for pafw service account
 
 DX outage... timeframe with Randy
 
+stop attending non-network meetings... 
+Title change - Senior Network engineer
 
+late night changes.. a series of changes 
 
+open fw tickets down to 150 from 200
