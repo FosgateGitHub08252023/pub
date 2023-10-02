@@ -19,12 +19,6 @@ NAT - in security policy, use pre-NAT destionation IP and post-NAT destionation 
 with regards to FiOS internet, the linksys has 5 ports, all 5 ports are lit. 2 go to fios, 2 go to fws and one to eth0 of savecom router; then port eth2 of savecom goes to port 1 of linw v 4-1 switch
 
 
- Joseph Galang = 192.168.165.201 from LAN_L3
- Jesus Camacho = 172.31.112.231 from VPN_S2S_CRB_L3 and   '172.16.167.101' 'AWS' )
- Spencer Lord = 172.31.112.222 from VPN_S2S_CRB_L3 and AWS
- Matthew Caravello = 192.168.165.145 from LAN_L3
- Philippe Cham = 192.168.165.205 from LAN_L3
-
 
 
 ToDo

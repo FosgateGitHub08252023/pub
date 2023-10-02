@@ -189,3 +189,8 @@ Title change - Senior Network engineer
 late night changes.. a series of changes 
 
 open fw tickets down to 150 from 200
+
+Need access to perfrom failover.. not infra doing failover
+
+failover in controled env
+
