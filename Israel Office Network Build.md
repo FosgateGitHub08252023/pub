@@ -34,3 +34,8 @@ Thus, 10GbE over Cat7 cable is less easy to install than Cat6a cable, while the 
 
 https://pointerclicker.com/cat-6a-vs-cat-7/
 The GG45 connector port is compatible with cables in other categories, but its plug cannot fit into the RJ-45 connector.
+
+
+wifi floor plan
+stack numbers
+wlc distance

@@ -171,7 +171,30 @@ JAIME DAVILA asked if FW team is in US or Israel... doesn't matter should be the
 
 >>>>>> 09-25-2023<<<<<<
 
+
 Linwood needs time to review. FW is not standard and someone trying new methods
+
+diagrams
+
+late night changes.. a series of changes <<<<<<<>>>>>>> prepare Operations for the move.. have list from JOhn Butkowski
+
+creds for pafw service account
+
+second ISP
+
+AWS failvoer
+need second IPSEC tunnel
+
+Firewall monitroing is in Solarwinds.. except for brooklyn. 
+
+DX outage... timeframe with Randy
+
+open fw tickets down to 150 from 200
+
+Need access to perfrom failover.. not infra doing failover
+
+stop attending non-network meetings... 
+Title change - Senior Network engineer
 
 tell teams to standdown
 
@@ -179,18 +202,15 @@ Weeklys with brian
 
 How long wait for commits? 
 
-creds for pafw service account
+failover in controled env... 
 
-DX outage... timeframe with Randy
+israel 
 
-stop attending non-network meetings... 
-Title change - Senior Network engineer
 
-late night changes.. a series of changes 
+10/09/2023
 
-open fw tickets down to 150 from 200
+splunk access
 
-Need access to perfrom failover.. not infra doing failover
+WE NEED a deprovision process to clear-up firewall rules when a user leaves or computer/IP is decom'd.
 
-failover in controled env
 
