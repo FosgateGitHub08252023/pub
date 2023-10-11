@@ -105,12 +105,33 @@ israel office diagram
   number of ports per floor
   floor plan
 
+ip.src == 54.209.197.230 and ip.dst==66.206.202.41 and tcp.srcport==49642
+
+received by fw < leave>
+transmitted from fw
+dropped by fw
+
+Ticket number: 
+taylor
+kristin
+
+tcp.dstport == 443 or tcp.srcport == 443
+
+!(tcp.dstport == 80) and !(tcp.dstport == 23)
 
 Understand WAN
     - P2Ps
     - IP Layout
     - VLAN Allocation
     - AWS VPC networking
+
+    Select TCP row
+    click Transmission COntrol Protocol
+    Click Timestamps
+    Right click Time since previipreviousus frame in this TCP segment } Select Apply as a column | Call it TCP Delta
+    Sort the TCP Delta cloumn then click the green arrow
+    Select Conversation Filter TCP
+    Select # column to put packets back in order.
 
 
 
