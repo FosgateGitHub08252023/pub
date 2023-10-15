@@ -213,4 +213,8 @@ splunk access
 
 WE NEED a deprovision process to clear-up firewall rules when a user leaves or computer/IP is decom'd.
 
+IT-Tatical
+
+can't do debugs, captures, or clears..
+
 

@@ -177,6 +177,15 @@ Palo Alto Networks PA-460 - security appliance = 5,191.99
 
 
 
+Resolution
+Incomplete in the application field:
+
+Incomplete means that either the three-way TCP handshake did not complete OR the three-way TCP handshake did complete but there was no enough data after the handshake to identify the application. In other words that traffic being seen is not really an application.
+
+
+fiserv jeremry
+
+
 Admin_Pcs
 
 7543 9267
@@ -3449,3 +3458,6 @@ IP                                            Vsys                From    User  
 Total: 0 users
 
 ahighland@PA-5220-VF-A(active)> 
+
+
+I don't see why 2 million Palestinians must die because of the actions of a couple dozen Hamas members. I can't support that!!!! #Genocide #Gazagenocide #GazaEvacuation
