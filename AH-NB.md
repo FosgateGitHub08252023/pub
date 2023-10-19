@@ -209,12 +209,35 @@ israel
 
 10/09/2023
 
+
 splunk access
+
 
 WE NEED a deprovision process to clear-up firewall rules when a user leaves or computer/IP is decom'd.
 
+
 IT-Tatical
 
+
 can't do debugs, captures, or clears..
+
+
+;;;
+
+
+Uriel and thales
+Isrel BoM
+prep to migrate linwood firewall but need access - 
+    - access to tshoot fiserv, fednow, fastly to do debugs and captutres
+AWS automatic failover
+
+
+
+10/23/2023
+
+remind ppl to add brief reason to firewall request.
+
+
+
 
 

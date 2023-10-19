@@ -3453,6 +3453,9 @@ ahighland@PA-5220-VF-A(active)> show user ip-user-mapping all type
 
 ahighland@PA-5220-VF-A(active)> show user ip-user-mapping all type XMLAPI
 
+adminali
+Password123!
+
 IP                                            Vsys                From    User                             IdleTimeout(s) MaxTimeout(s)
 --------------------------------------------- ------------------- ------- -------------------------------- -------------- -------------
 Total: 0 users
