@@ -2,13 +2,52 @@ Misc
 
 Teva/Tahvah
 
-Fedline_Fednow_Prod_Source = 172.22.112.31
-Fednow_Prod = 170.209.237.2
+PC_Amichai_Lichtenstein
+172.22.16.123 is in Developer_VMs_VF
+192.168.165.108 is in IT_Devel_PCs
+
+
+\\\
+and 
+dkatzman = 172.22.17.105 DMZ_L3
+( addr.src in '172.22.16.114' ) and ( addr.dst in '172.22.119.2' )
+sources are PC_Yudit_Edelstein_AWS (172.19.49.167)) and PC_Amos_Segal_VF (172.22.16.114)
+destinations
+
+EmpMngUat01 = 172.22.45.100
+172.22.119.0/24 i.e 172.22.119.2 (DMZ_L3)
+Server_CRBTFS01 = 192.168.145.12
+
+\\\
+
+BG - middle men
+involved in .. addressed to me but others
+disruptive for realtime support for things that aren't urgent
+
+Alexander Grillo, Simon Lee, Bora Lee and Anthony Biondo?
 
 ( addr.dst in '170.209.237.2' ) and ( time_generated geq '2023/10/10 00:00:00' ) and ( time_generated leq '2023/10/11 03:00:00' )
 
 
+cn=secinternalauditdepartment,ou=security groups,dc=crb,dc=local
+cn=secAWSSnowFlakeAccess,ou=security groups,dc=crb,dc=local
+cn=seccloudstorageallow,ou=security groups,dc=crb,dc=local
+
+cn=secSASVIExternalAudit,ou=security groups,dc=crb,dc=local
+
+[2:11 PM] JSH Adil Raza
+
+Alex Grunstein and  and Anne Walton also require access
+Andi Choyce, Majilinda Qarmarani, 
+
+ ( user.src eq 'crb\araza' ) and ( addr.src in '172.16.164.138' )
+
+crb\secCloudflareOps
+PC_Amichai_Lichtenstein = 192.168.165.108
+PC_Amichai_Lichtenstein_VF = 172.22.16.123
+
 crb\seccloudstorageallow
+crb\secAWSSnowFlakeAccess
 
 clear dhcp lease all
 debug software restart process dhcp

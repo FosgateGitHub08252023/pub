@@ -237,7 +237,9 @@ AWS automatic failover
 
 remind ppl to add brief reason to firewall request.
 
+Will advise of notable changes that are not BAU
 
+remove me from IT Engineering Zendesk group
 
 
 
