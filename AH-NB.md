@@ -233,6 +233,10 @@ AWS automatic failover
 
 
 
+
+
+
+
 10/23/2023
 
 remind ppl to add brief reason to firewall request.
@@ -241,5 +245,22 @@ Will advise of notable changes that are not BAU
 
 remove me from IT Engineering Zendesk group
 
+curse to have users w/ access bc they tell what to do, not what they need.. infra should not do that
+remove their access, they are viewing sensivte data
 
+now have moniotring from VFO to AWS. 
+
+tshoot trustly and fednow
+
+deprovision old resources ie users, computers, servers
+
+resolve fiserv issue with captures
+
+remove access from others
+
+fix issue with groups query
+
+
+
+email to remove computer from domain so computer can ping AWS
 
