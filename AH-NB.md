@@ -264,3 +264,11 @@ fix issue with groups query
 
 email to remove computer from domain so computer can ping AWS
 
+10/30/2023
+
+remove from SRE
+
+too many AD groups... causing issues.. manually add
+
+
+

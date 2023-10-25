@@ -3,36 +3,14 @@ Misc
 Teva/Tahvah
 Uriel/ Oh-re-el
 
-460
-dfgw is .1
+[9/18 11:12 AM] Deborah Garfinkel
 
- - .95 is BMS
- Default FiOS is .94
- wif is .95
- per debbie, Fios range is 5 ips and beggins with .92
+We have 5, starts at .92 with gateway at .1.... 98.109.107.1
 
-
-( app eq 'openai-chatgpt' ) and ( addr.src in '192.168.165.188' )
-( app eq 'openai-chatgpt' ) Louis's IP which is blocked is 192.168.162.188
-( app eq 'openai-chatgpt' ) and ( url eq 'chat.openai.com/' )
-
-Application options
-openai
-openai-api
-openai-chatgpt
-
-subcategory
-artificial-intelligence
-
-and ( rule eq 'Web_Browse_Out' )
- and ( rule eq 'CRB_Apps_Workstations' ) has Outbound_Strict
-
-( app eq 'openai-chatgpt' ) and ( rule eq 'Web_Browse_Out' ) and ( rule eq 'Out_VWire_Allow' ) and ( category eq 'license-expired' )
-
-Parker wifi (Aleza) is assigned 108.5.146.233 and can get to https://chat.openai.com
-
-Parker wired (Jeff 192.168.162.105) is assigned 108.5.146.234 and canNOT get to https://chat.openai.com
-
+PC_Amichai_Lichtenstein
+172.22.16.123 is in Developer_VMs_VF
+192.168.165.108 is in IT_Devel_PCs
+app openai-chatgpt
 
 \\\
 and 
@@ -46,6 +24,7 @@ EmpMngUat01 = 172.22.45.100
 Server_CRBTFS01 = 192.168.145.12
 
 \\\
+"I'm sorry, that Allahu akbar makes my skin crawl!" - Megyan Kelly
 
 BG - middle men
 involved in .. addressed to me but others

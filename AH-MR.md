@@ -67,4 +67,6 @@ fix switch ports in unifi
 
 >>>>>
 
-
+ChatGPT
+fios linwood free IP
+change public IPs on linwood new ISP
