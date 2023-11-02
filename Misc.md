@@ -1,11 +1,20 @@
 Misc
 
+
+
+hhhhhhhh
+
 Teva/Tahvah
 Uriel/ Oh-re-el
 
 [9/18 11:12 AM] Deborah Garfinkel
 
 We have 5, starts at .92 with gateway at .1.... 98.109.107.1
+
+131.239.170.90/29 > 131.239.170.89 – 131.239.170.94
+131.239.170.97/27 > 131.239.170.97 – 131.239.170.126
+131.239.170.125 will be guest wifi
+
 
 PC_Amichai_Lichtenstein
 172.22.16.123 is in Developer_VMs_VF
