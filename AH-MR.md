@@ -67,7 +67,33 @@ fix switch ports in unifi
 
 >>>>>
 
-ChatGPT
+
+
 fios linwood free IP
-change public IPs on linwood new ISP
-remove all vlans from HP switch except 196
+
+late night like 8pm for a blip?
+
+change public IPs on linwood new ISP from /27 (30) and /29 (6) need our account number
+
+bandwidth of VFO's 144.202 DIA
+bandidth of VFO's 66.206 DIA?
+
+remove all vlans from HP switch except 196... we don't have mgmt vlan.. 
+remove logical VR and change that
+log to FL and one to VF
+
+will begin tagging you on anything new I add to JIRA
+
+
+Changes tonight? very late on Saturday, early on Sunday or night of the cutover?
+Assign VLAN 3000 to port 13 of the HP switches
+NAT VFO 10.61 and 10.56.
+If not urgent like P1 then should not come to you
+
+
+
+VLAN3000
+Fortigate password
+token
+vault
+number of user to remove

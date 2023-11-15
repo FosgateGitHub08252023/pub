@@ -260,15 +260,45 @@ remove access from others
 
 fix issue with groups query
 
-
-
 email to remove computer from domain so computer can ping AWS
+
 
 10/30/2023
 
-remove from SRE
+Fednow connectivity issue
+
+https://crossriver.zendesk.com/agent/tickets/561503
 
 too many AD groups... causing issues.. manually add
+
+change title. goal of network architect... just irewall... wifi updgrades.
+
+will begin tagging you on anything new I add to JIRA
+
+unable to get to DC due to intermittent connectivity
+
+if it is not urgent no one should be coming to you. 
+
+who assigns IP blocks
+
+Kadija ticket 
+
+Il-yah and Azure GP SSO/MFA
+
+number of Pano users is 12 but number of users w/ local fw access is 19. 
+
+vault 
+
+
+office migration probably this week.. ISP changes, fiber and riser chanages, etc
+
+
+BGP to AWS
+Move Parker infra
+
+
+BGP btwn offices
+AWS egress 
 
 
 
