@@ -283,7 +283,6 @@ who assigns IP blocks
 
 Kadija ticket 
 
-Il-yah and Azure GP SSO/MFA
 
 number of Pano users is 12 but number of users w/ local fw access is 19. 
 
@@ -297,8 +296,33 @@ BGP to AWS
 Move Parker infra
 
 
+
 BGP btwn offices
 AWS egress 
 
 
+
+11/20/2023
+
+
+
+FedNow
+
+cathy investigating last outage
+
+Yuri with some IT audit tickets
+
+Ill-Ye-yah
+
+Il-yah and Azure GP SSO/MFA - - -domain and cert to test with
+
+which tickets to work... new installs, cleartouch, rdp, but put others in saved stage for you to push?
+
+test linwood failover
+
+firewalls out of sync
+
+ppl doing network functions.. moving equipment.
+
+Ofek Edri
 
