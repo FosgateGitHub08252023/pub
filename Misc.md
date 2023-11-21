@@ -13,27 +13,6 @@ berryl fiserv
 PROD UI URL: https://bankworks.bw-sp.com/bw1/bankworks/signon.cfm#/  requries an IPSEC VPN
 
 
-kenny
-trtacy
-dolly
-
-denuis
-dora
-
-grandma
-sandy
-unlce
-
-alice
-mahandra
-
- tony
- jane
-
- ali
- helen
- soso
-
 Teva/Tahvah
 Uriel/ Oh-re-el
 
