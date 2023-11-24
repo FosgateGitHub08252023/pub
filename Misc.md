@@ -1,5 +1,50 @@
 Misc
 
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Thales IPs - brian asked me to send them to you.
+ 
+cm01.crbcloud.com [172.22.10.105]
+cm02.crbcloud.com [172.22.10.106]
+
+its 2 node cluster, .105 is primary
+
+hey, here are the thales appliances ports. From TierPoint
+ 
+TEK
+crossriverba-tek-sw0#show run inter Et45
+interface Ethernet45
+description [cus] crossriverba-tek-thales01 [LOM 1]
+shutdown
+speed forced 10000full
+switchport access vlan 201
+
+crossriverba-tek-sw1#show run inter eth45
+interface Ethernet45
+description [cus] crossriverba-tek-thales01 [LOM 2]
+shutdown
+speed forced 10000full
+switchport access vlan 2010
+
+VFO
+crossriverba-vfo-sw5(s1)#show run inter Et5/42
+interface Ethernet5/42
+description [cus] Thales HSM Appliance Port 1
+shutdown
+speed forced 10000full
+switchport access vlan 2010
+crossriverba-vfo-sw6(s1)#show run inter Et5/42
+interface Ethernet5/42
+description [cus] Thales HSM Appliance Port 2
+shutdown
+speed forced 10000full
+switchport access vlan 2010
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 58fDFe3Ki754654fSSFWe0z63542 from RS2
 
 CRB Merchant Portal: https://crb-portal.bw-sp.com/generic-module-loader/ui/warp/index.html{}   has been whitelsited... 
