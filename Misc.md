@@ -1,5 +1,22 @@
 Misc
 
+fri 12 confirmed
+frid 2:45
+
+Palo Alto Network GlobalProtect from Azure's Enterprise Applications
+SAML
+Entity ID is vpnlinwood.crbnj.net 131.239.170.97
+
+Identifier (Entity ID)
+https://vpnlinwood.crbnj.net/SAML20/SP
+
+Reply URL (Assertion Consumer Service URL)
+https://vpnlinwood.crbnj.net/SAML20/SP/ACS
+
+Sign on URL
+https://vpnlinwood.crbnj.net
+
+Download and send me the Base64 cert and the Federation Metadata XML
 
 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -198,8 +215,9 @@ crb_customer_dx_gateway  cgw-01e25a3156bd2a370	65000	69.210.70.91  vpn-016a24dad
 crb_customer_vpn_gateway cgw-04f8837a3a33d05e7	65000 AWS-VPN-CRB-Secondary vpn-0464275f80f564308  tgw-0a7d8c2374fcde4bd  66.206.202.202 Static  Tunnel 1	3.209.246.40	169.254.220.208/30 && Tunnel 2	54.152.170.204	169.254.168.212/30
 
 
-Sad @megynkelly @patrickbetdavid @dbongino @charliekirk11 @SaltyCracker9 @KimIversenShow @WhiteHouse @UNICEFUSA @UN @WHO @realstewpeters @WSJ @washingtonpost @nypost @DonaldJTrumpJr @joerogan @bennyjohnson @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate 
+@megynkelly @patrickbetdavid @dbongino @nytimes @elonmusk @UNICEFUSA @UN @WHO @WSJ @washingtonpost @nypost @DonaldJTrumpJr @joerogan @bennyjohnson @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate @alexandracooper @BarstoolRadio @hubermanlab @NPR
 
+#GazaGenocide #gazaholocost
 
 "You can kill a revolutionary, but you cannot kill a revolution" - Afeni Shakur #FreePalestian #CeasefireNOW #WeAreTheWorld
 

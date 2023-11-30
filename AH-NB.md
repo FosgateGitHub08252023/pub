@@ -1,6 +1,15 @@
 AH <> NB
 
 
+
+ciphertrust login: ksadmin
+You are required to change your password immediately (root enforced)
+Enter new UNIX password: 
+
+
+nmcli con mod eth0 ipv4.method manual ipv4.address 192.168.49.10/24 ipv4.gateway 192.168.49.1 ipv4.dns 172.22.20.5,192.168.65.5
+
+
 new monitoring server
 For 08282023
 Replace all 192.168.
@@ -326,3 +335,39 @@ ppl doing network functions.. moving equipment.
 
 Ofek Edri
 
+
+
+
+
+11/27/2023
+
+Tickets.. which okay to push other than new hires? ppl still using zendesk
+
+deeper discussion on DC to AWS and AWS internet ingress/egress 
+
+Ilya 
+
+network monitoring is weak
+
+cleanup old network tickets from the Infra team
+
+cancel the 10Gig P2P .. cancel Fios  
+
+test linwood failover 
+
+Assiting Uril with Fortigate access 
+
+Fednow not a network issue
+
+Fiserv on hold
+
+Slow down so cleanup sprint and on track
+
+Linwood 5th floor? 6 months more at least?
+
+IP whitelisting stays permanent or rememoved after some time?
+
+
+gig-sa is aws rep
+wiz? sec tool
+sre send the ticket #?
