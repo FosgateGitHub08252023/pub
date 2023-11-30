@@ -1,7 +1,7 @@
 Misc
 
-fri 12 confirmed
-frid 2:45
+Dentist fri 11:30
+
 
 Palo Alto Network GlobalProtect from Azure's Enterprise Applications
 SAML
