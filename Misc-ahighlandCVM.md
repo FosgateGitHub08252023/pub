@@ -1,73 +1,5 @@
 Misc
 
-Dentist fri 11:30
-
-Palo Alto Network GlobalProtect from Azure's Enterprise Applications
-SAML
-Entity ID is vpnlinwood.crbnj.net 131.239.170.97
-
-Identifier (Entity ID)
-https://vpnlinwood.crbnj.net/SAML20/SP
-
-Reply URL (Assertion Consumer Service URL)
-https://vpnlinwood.crbnj.net/SAML20/SP/ACS
-
-Sign on URL
-https://vpnlinwood.crbnj.net
-
-Download and send me the Base64 cert and the Federation Metadata XML
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-CLI
-u/n: ksadmin
-p/w: 5P*e*4J#Gp86mM
-
-5P*e*4J#Gp86mMputtygen  <<<< also for SCP.. cert bascilly
-
-
-Gui
-u/n: admin
-p/w: 5P*e*4J#Gp86mMGUI
-
-
-
-Thales Portal
-acct# 1-2927-1145659
-u/n: ahighland@crossriver.com
-p/w: 45!&fFcniJkS7
-
-
-
-[3:19 PM] Justin Wright
-sudo /opt/keysecure/ks_upgrade.sh -f ~/CTMv2.3.0.tar.gz.gpg
-
-sudo /opt/keysecure/ks_upgrade.sh -f ~/CTMv2.6.0.tar.gz.gpg
-
-VFO Prod root backup key 8*e*4J#Gp86m67GUI
-
-( addr.src in '172.22.10.105' )
-
-
-primary node
-admin
-79SEpVDNRbV5v$3y
-
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-58fDFe3Ki754654fSSFWe0z63542 from RS2
-
-CRB Merchant Portal: https://crb-portal.bw-sp.com/generic-module-loader/ui/warp/index.html{}   has been whitelsited... 
-
-98.109.107.96
-255.255.255.0
-98.109.107.1
-
-berryl fiserv 
-
-PROD UI URL: https://bankworks.bw-sp.com/bw1/bankworks/signon.cfm#/  requries an IPSEC VPN
-
 
 Teva/Tahvah
 Uriel/ Oh-re-el
@@ -79,8 +11,6 @@ We have 5, starts at .92 with gateway at .1.... 98.109.107.1
 131.239.170.90/29 > 131.239.170.89 – 131.239.170.94  All IPs are used except for 131.239.170.91 and 131.239.170.94
 131.239.170.97/27 > 131.239.170.97 – 131.239.170.126 All IPs are free
 131.239.170.125 will be guest wifi
-
-1gb file download from testfil.org took 23 secs on my home network
 
 >>>>>>>>>FedNow<<<<<<<<<<<<
 show routing fib virtual-router VR1
@@ -209,11 +139,7 @@ crb_customer_dx_gateway  cgw-01e25a3156bd2a370	65000	69.210.70.91  vpn-016a24dad
 crb_customer_vpn_gateway cgw-04f8837a3a33d05e7	65000 AWS-VPN-CRB-Secondary vpn-0464275f80f564308  tgw-0a7d8c2374fcde4bd  66.206.202.202 Static  Tunnel 1	3.209.246.40	169.254.220.208/30 && Tunnel 2	54.152.170.204	169.254.168.212/30
 
 
-@megynkelly @patrickbetdavid @dbongino @nytimes @elonmusk @UNICEFUSA @UN @WHO @WSJ @washingtonpost @nypost @DonaldJTrumpJr @joerogan @bennyjohnson @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate @alexandracooper @BarstoolRadio @hubermanlab @NPR
-
-#GazaGenocide #gazaholocost
-
-"You can kill a revolutionary, but you cannot kill a revolution" - Afeni Shakur #FreePalestian #CeasefireNOW #WeAreTheWorld
+You guys okay with this? @megynkelly @patrickbetdavid @dbongino @charliekirk11 @SaltyCracker9 @KimIversenShow @elonmusk @WhiteHouse @UNICEFUSA @UN @WHO @realstewpeters @WSJ @washingtonpost @nypost @DonaldJTrumpJr @joerogan @bennyjohnson 
 
 CRB.LOCAL Domain Controllers: is DCs_crb.local in PA
 172.16.64.55 = CRB09.crb.local
