@@ -2,6 +2,8 @@ Misc
 
 Dentist fri 11:30
 
+amznfsxikobbk1p.crbcloud.com
+
 Palo Alto Network GlobalProtect from Azure's Enterprise Applications
 SAML
 Entity ID is vpnlinwood.crbnj.net 131.239.170.97
