@@ -210,10 +210,19 @@ crb_customer_dx_gateway  cgw-01e25a3156bd2a370	65000	69.210.70.91  vpn-016a24dad
 
 crb_customer_vpn_gateway cgw-04f8837a3a33d05e7	65000 AWS-VPN-CRB-Secondary vpn-0464275f80f564308  tgw-0a7d8c2374fcde4bd  66.206.202.202 Static  Tunnel 1	3.209.246.40	169.254.220.208/30 && Tunnel 2	54.152.170.204	169.254.168.212/30
 
+@wael_eldahdouh
 
-@megynkelly @patrickbetdavid @dbongino @nytimes @elonmusk @UNICEFUSA @UN @WHO @WSJ @washingtonpost @nypost @DonaldJTrumpJr @joerogan @bennyjohnson @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate @alexandracooper @BarstoolRadio @hubermanlab @NPR
+@megynkelly @patrickbetdavid @dbongino @nytimes @elonmusk @UNICEFUSA @UN @WHO @WSJ @washingtonpost @nypost @FLOTUS @joerogan @KamalaHarris @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate @alexandracooper @BarstoolRadio @charliekirk11 @NPR @amnesty @RonDeSantis
 
-#GazaGenocide #gazaholocost
+S.O.S! @nytimes @elonmusk @UNICEFUSA @UN @WHO @WSJ @washingtonpost @nypost @FLOTUS @joerogan @KamalaHarris @CNN @wolfblitzer @BarackObama @FoxNews @maddow @TuckerCarlson @Cobratate @alexandracooper @BarstoolRadio @charliekirk11 @NPR @amnesty @Pontifex @WhiteHouse @RonDeSantis @VP
+@SecDef @PentagonPresSec
+
+
+
+
+4:17 AM on cam list came solten at 11:17PM
+19:47 on cam package was delivered
+amazon say deliever 14:47
 
 "You can kill a revolutionary, but you cannot kill a revolution" - Afeni Shakur #FreePalestian #CeasefireNOW #WeAreTheWorld
 

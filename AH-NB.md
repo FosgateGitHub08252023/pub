@@ -430,3 +430,47 @@ no network changes w/o NOC or Ali
 
 
 
+
+
+Cert
+fw renewal license
+
+brian uprade sflows.. 200Megs
+
+upcoming audtis
+solarwinds replacement
+
+reviewed the two branch locations and now pending a quote
+
+
+
+
+
+
+Vandis+Fortigate+AWS
+
+
+BYOL
+Transit gateway - sit in inspection VPC
+firmware upgrade requirements
+active sessions and new sessions
+illgeal IP usage for the firewall? cgn
+if transit gwty is required are there bandwith limitations for a custome w/ 10G or 100G? ipsec encrption
+ELB difference or changes?
+BYO /24?
+number of advertised bgp prefixes
+traffic decryption?
+remove securty and NACLs is common?
+
+firewalls active active or active standby
+
+AWS outage dual AZ or other regaion?
+
+10,000 prefixes 
+
+
+gatway loadbalancer
+
+vest after how oong? 160 stock
+1 yr then 25%
+100k for examplenfrpom
